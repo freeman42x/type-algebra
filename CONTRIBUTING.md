@@ -1,13 +1,17 @@
 # Priority Queue
 
+* can LLM do inhabitant counting
 * add a Mu type
 * add a rewrite from Forall to Mu
-
-# Goals
-
-* recursive Algebra support
-* infinite Algebra support
 * optimize proof efficiency
+    * use existing proof solver to get better performance and not miss cases
+        * algorithm
+            * map Algebra to proof engine language
+            * use proof engine to get cardinality
+
+# Goal
+
+* recursive Algebra which will also solve infinite Algebra
 
 # Notes
 
