@@ -230,6 +230,16 @@ removeForall _ =
   Nothing
 
 recursiveFunctor ::
+  Eq x =>
   Algebra x ->
   Maybe (Algebra x)
-recursiveFunctor _ = Just (Arity Infinite)
+recursiveFunctor (Forall a (Exponent (Var b) (Exponent (Var c) (Var d)))) =
+  if a == b && b == c && c == d
+    then Just (Arity (Finite 0))
+    else Nothing
+recursiveFunctor (Forall a (Exponent (Exponent (Var b) (Var c)) (Exponent (Var d) (Var e)))) =
+  if a == b && b == c && c == d && d == e
+    then Just (Arity Infinite)
+    else Nothing
+recursiveFunctor _ =
+  Nothing
