@@ -36,7 +36,7 @@ main =
               ("∀ x. (x, x) -> (x, x)", propertyExamplePair),
               ("∀ a b c. (a -> b) -> (b -> c) -> a -> c", propertyExampleCompose),
               ("∀ x. (x -> x) -> x", propertyRecursiveVoid),
-              ("∀ x. (x -> x) -> x -> x ", propertyRecursiveInfinite)
+              ("∀ x. (x -> x) -> x -> x", propertyRecursiveInfinite)
             ]
         )
     ]
