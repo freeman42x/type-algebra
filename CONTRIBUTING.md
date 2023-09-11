@@ -3,10 +3,11 @@
 * add a Mu type
 * add a rewrite from Forall to Mu
 
-# Goal
+# Goals
 
-* recursive types support
-* infinite types support
+* recursive Algebra support
+* infinite Algebra support
+* optimize proof efficiency
 
 # Notes
 
