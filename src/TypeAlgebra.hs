@@ -51,7 +51,7 @@ searchPathCost ::
   NonEmpty (RewriteLabel, Algebra x) ->
   Sum Int
 searchPathCost xs =
-  foldMap ruleCost (fst <$> xs) <> algebraCost (snd (NEL.head xs))
+  foldMap (ruleCost . fst) xs <> algebraCost (snd (NEL.head xs))
 
 -- | Finds a solution by applying weighted rewrite rules.
 -- | Doesn't search from the same element twice.
