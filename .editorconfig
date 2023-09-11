@@ -1,3 +1,8 @@
+# This is the top-level or root EditorConfig file for the project.
+# It applies settings to the entire project directory and its subdirectories.
+
+root = true
+
 [*]
 end_of_line = lf
 insert_final_newline = false
