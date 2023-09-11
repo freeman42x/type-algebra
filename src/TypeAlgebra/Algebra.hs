@@ -1,5 +1,6 @@
 module TypeAlgebra.Algebra
   ( Algebra (..),
+    Cardinality (..),
     subst,
     (->>),
     Variance (..),
@@ -11,9 +12,14 @@ import Control.Applicative (liftA2)
 import Control.Lens (Plated (plate))
 import qualified Data.Map as M
 
+data Cardinality
+  = Finite Int
+  | Infinite
+  deriving (Eq, Ord, Show)
+
 -- | Polynomials, without subtraction, with explicit quantification.
 data Algebra x
-  = Arity Int
+  = Arity Cardinality
   | Sum (Algebra x) (Algebra x)
   | Product (Algebra x) (Algebra x)
   | Exponent (Algebra x) (Algebra x)

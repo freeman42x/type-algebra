@@ -26,6 +26,7 @@ import TypeAlgebra.Rewrites
     uncurryProduct,
     yonedaContravariant,
     yonedaCovariant,
+    recursiveFunctor,
   )
 
 newtype Rule f a
@@ -57,6 +58,7 @@ data RewriteLabel
   | RewriteIntroduceArity
   | RewriteMoveForall
   | RewriteRemoveForall
+  | RewriteRecursiveFunctor
   deriving (Eq, Ord, Show)
 
 rules :: Ord x => [(RewriteLabel, Rule [] (Algebra x))]
@@ -72,7 +74,8 @@ rules =
     (RewriteAssociative, rule associative),
     (RewriteDistributive, rule distributive),
     (RewriteCommutative, rule commutative),
-    (RewriteIntroduceArity, Rule introduceArity)
+    (RewriteIntroduceArity, Rule introduceArity),
+    (RewriteRecursiveFunctor, rule recursiveFunctor)
   ]
   where
     rule f =
