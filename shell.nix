@@ -6,5 +6,8 @@ pkgs.mkShell {
     pkgs.cabal-install
     pkgs.ghcid
     pkgs.hlint
+    pkgs.haskell-language-server
+    pkgs.haskellPackages.hie-bios
+    pkgs.haskellPackages.implicit-hie
   ];
 }

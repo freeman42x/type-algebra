@@ -1,0 +1,7 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:type-algebra"
+
+    - path: "test"
+      component: "type-algebra:test:type-algebra-tests"
