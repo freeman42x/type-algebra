@@ -11,37 +11,53 @@ module TypeAlgebra.Rewrites
     uncurryProduct,
     yonedaContravariant,
     yonedaCovariant,
+    recursiveFunctor,
   )
 where
 
 import Control.Applicative ((<|>))
 import Control.Monad.Zip (mzip)
 import qualified Data.Map as M
-import TypeAlgebra.Algebra (Algebra (..), Variance (..), subst, variance)
+import TypeAlgebra.Algebra (Algebra (..), Variance (..), Cardinality (..), subst, variance)
 
 arithmetic ::
   Algebra x ->
   Maybe (Algebra x)
-arithmetic (Sum a (Arity 0)) =
+arithmetic (Sum a (Arity (Finite 0))) =
   Just a
-arithmetic (Sum (Arity 0) a) =
+arithmetic (Sum (Arity (Finite 0)) a) =
   Just a
-arithmetic (Product (Arity 0) _) =
-  Just (Arity 0)
-arithmetic (Product _ (Arity 0)) =
-  Just (Arity 0)
-arithmetic (Product a (Arity 1)) =
+arithmetic (Product (Arity (Finite 0)) _) =
+  Just (Arity (Finite 0))
+arithmetic (Product _ (Arity (Finite 0))) =
+  Just (Arity (Finite 0))
+arithmetic (Product a (Arity (Finite 1))) =
   Just a
-arithmetic (Product (Arity 1) a) =
+arithmetic (Product (Arity (Finite 1)) a) =
   Just a
-arithmetic (Exponent a (Arity 1)) =
+arithmetic (Exponent a (Arity (Finite 1))) =
   Just a
 arithmetic (Exponent (Arity a) (Arity b)) =
-  Just (Arity (a ^ b))
+  Just (Arity (exponent a b))
+  where
+    exponent (Finite a') (Finite b') =
+      Finite (a' ^ b')
+    exponent _ _ =
+      Infinite
 arithmetic (Product (Arity a) (Arity b)) =
-  Just (Arity (a * b))
+  Just (Arity (product' a b))
+  where
+    product' (Finite a') (Finite b') =
+      Finite (a' * b')
+    product' _ _ =
+      Infinite
 arithmetic (Sum (Arity a) (Arity b)) =
-  Just (Arity (a + b))
+  Just (Arity (sum' a b))
+  where
+    sum' (Finite a') (Finite b') =
+      Finite (a' + b')
+    sum' _ _ =
+      Infinite
 arithmetic _ =
   Nothing
 
@@ -171,18 +187,18 @@ introduceArity ::
   Algebra x ->
   [Algebra x]
 introduceArity (Exponent c (Product (Var a) (Var b))) =
-  [ Exponent c (Exponent (Var a) (Arity 2)) | a == b
+  [ Exponent c (Exponent (Var a) (Arity (Finite 2))) | a == b
   ]
 introduceArity (Exponent b (Var a)) =
-  [ Exponent b (Exponent (Var a) (Arity 1))
+  [ Exponent b (Exponent (Var a) (Arity (Finite 1)))
   ]
-introduceArity (Forall _ (Exponent _ (Exponent (Arity 1) _))) =
+introduceArity (Forall _ (Exponent _ (Exponent (Arity (Finite 1)) _))) =
   []
-introduceArity (Forall _ (Exponent _ (Exponent _ (Arity 0)))) =
+introduceArity (Forall _ (Exponent _ (Exponent _ (Arity (Finite 0))))) =
   []
 introduceArity (Forall x a) =
-  [ Forall x (Exponent a (Exponent (Arity 1) (Var x))),
-    Forall x (Exponent a (Exponent (Var x) (Arity 0)))
+  [ Forall x (Exponent a (Exponent (Arity (Finite 1)) (Var x))),
+    Forall x (Exponent a (Exponent (Var x) (Arity (Finite 0))))
   ]
 introduceArity _ =
   []
@@ -210,3 +226,9 @@ removeForall (Forall x a) =
     else Just a
 removeForall _ =
   Nothing
+
+recursiveFunctor ::
+  Algebra x ->
+  Maybe (Algebra x)
+recursiveFunctor _ =
+  Just (Arity Infinite)

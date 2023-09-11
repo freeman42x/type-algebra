@@ -1,6 +1,5 @@
 module TypeAlgebra
   ( module TypeAlgebra.Algebra,
-    Cardinality(..),
     algebraCost,
     ruleCost,
     searchPathCost,
@@ -22,10 +21,8 @@ import Data.Maybe (listToMaybe)
 import Data.Monoid (Sum)
 import Data.Ord (comparing)
 import qualified Data.Set as Set
-import TypeAlgebra.Algebra (Algebra (..), Variance (..), subst, variance)
+import TypeAlgebra.Algebra (Algebra (..), Cardinality (..), Variance (..), subst, variance)
 import TypeAlgebra.Rules (RewriteLabel (RewriteCommutative), Rule, rules, runRulePlated)
-
-data Cardinality = Finite Int | Infinite deriving (Eq, Ord, Show) 
 
 -- Disincentivise quantification and functions.
 algebraCost ::
@@ -99,6 +96,6 @@ algebraArity =
   listToMaybe . algebraSolutions >=> f . snd . NEL.head
   where
     f (Arity n) =
-      Just (Finite n)
+      Just n
     f _ =
       Nothing
