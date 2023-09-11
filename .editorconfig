@@ -1,0 +1,15 @@
+[*]
+end_of_line = lf
+insert_final_newline = false
+
+# Define the charset as utf-8 for all file types
+[*]
+charset = utf-8
+
+# Specify indentation for Haskell files
+[*.hs]
+indent_style = space
+indent_size = 2
+
+# Set a maximum line length of 100 characters to ensure code readability
+max_line_length = 100
