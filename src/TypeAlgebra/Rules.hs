@@ -63,19 +63,19 @@ data RewriteLabel
 
 rules :: Ord x => [(RewriteLabel, Rule [] (Algebra x))]
 rules =
-  [ (RewriteYonedaCovariant, rule yonedaCovariant),
-    (RewriteYonedaContravariant, rule yonedaContravariant),
-    (RewriteMoveForall, rule moveForall),
-    (RewriteRemoveForall, rule removeForall),
-    (RewriteArithmetic, rule arithmetic),
-    (RewriteCurrySum, rule currySum),
-    (RewriteCurryProduct, rule curryProduct),
-    (RewriteUncurryProduct, rule uncurryProduct),
-    (RewriteAssociative, rule associative),
-    (RewriteDistributive, rule distributive),
-    (RewriteCommutative, rule commutative),
-    (RewriteIntroduceArity, Rule introduceArity),
-    (RewriteRecursiveFunctor, rule recursiveFunctor)
+  [  (RewriteYonedaCovariant, rule yonedaCovariant)
+  ,  (RewriteYonedaContravariant, rule yonedaContravariant)
+  ,  (RewriteMoveForall, rule moveForall)
+  ,  (RewriteRemoveForall, rule removeForall)
+  ,  (RewriteArithmetic, rule arithmetic)
+  ,  (RewriteCurrySum, rule currySum)
+  ,  (RewriteCurryProduct, rule curryProduct)
+  ,  (RewriteUncurryProduct, rule uncurryProduct)
+  ,  (RewriteAssociative, rule associative)
+  ,  (RewriteDistributive, rule distributive)
+  ,  (RewriteCommutative, rule commutative)
+  ,  (RewriteIntroduceArity, Rule introduceArity)
+  -- ,  (RewriteRecursiveFunctor, rule recursiveFunctor)
   ]
   where
     rule f =
