@@ -22,7 +22,7 @@ import Data.Monoid (Sum)
 import Data.Ord (comparing)
 import qualified Data.Set as Set
 import TypeAlgebra.Algebra (Algebra (..), Cardinality (..), Variance (..), subst, variance)
-import TypeAlgebra.Rules (RewriteLabel (RewriteCommutative), Rule, rules, runRulePlated)
+import TypeAlgebra.Rules (RewriteLabel (RewriteRecursiveFunctor, RewriteCommutative), Rule, rules, runRulePlated)
 
 -- Disincentivise quantification and functions.
 algebraCost ::
@@ -42,6 +42,8 @@ algebraCost =
 ruleCost ::
   RewriteLabel ->
   Sum Int
+ruleCost RewriteRecursiveFunctor =
+  69
 ruleCost RewriteCommutative =
   30
 ruleCost _ =

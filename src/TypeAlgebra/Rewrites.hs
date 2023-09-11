@@ -232,5 +232,4 @@ removeForall _ =
 recursiveFunctor ::
   Algebra x ->
   Maybe (Algebra x)
-recursiveFunctor _ =
-  Just (Arity Infinite)
+recursiveFunctor _ = Just (Arity Infinite)
