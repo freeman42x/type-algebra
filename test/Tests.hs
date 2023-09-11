@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Tests where
+module Main where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.Map as M
