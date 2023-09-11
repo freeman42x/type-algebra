@@ -24,6 +24,8 @@ import qualified Data.Set as Set
 import TypeAlgebra.Algebra (Algebra (..), Variance (..), subst, variance)
 import TypeAlgebra.Rules (RewriteLabel (RewriteCommutative), Rule, rules, runRulePlated)
 
+data Cardinality = Finite Int | Infinite 
+
 -- Disincentivise quantification and functions.
 algebraCost ::
   Algebra x ->
@@ -91,11 +93,11 @@ algebraSolutions =
     )
     . algebraSearch rules searchPathCost
 
-algebraArity :: Ord x => Algebra x -> Maybe Int
+algebraArity :: Ord x => Algebra x -> Maybe Cardinality
 algebraArity =
   listToMaybe . algebraSolutions >=> f . snd . NEL.head
   where
     f (Arity n) =
-      Just n
+      Just (Finite n)
     f _ =
       Nothing
