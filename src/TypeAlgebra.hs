@@ -1,5 +1,6 @@
 module TypeAlgebra
   ( module TypeAlgebra.Algebra,
+    Cardinality(..),
     algebraCost,
     ruleCost,
     searchPathCost,
@@ -24,7 +25,7 @@ import qualified Data.Set as Set
 import TypeAlgebra.Algebra (Algebra (..), Variance (..), subst, variance)
 import TypeAlgebra.Rules (RewriteLabel (RewriteCommutative), Rule, rules, runRulePlated)
 
-data Cardinality = Finite Int | Infinite 
+data Cardinality = Finite Int | Infinite deriving (Eq, Ord, Show) 
 
 -- Disincentivise quantification and functions.
 algebraCost ::
