@@ -127,8 +127,7 @@ propertyExampleCompose =
                 "b"
                 ( Forall
                     "c"
-                    ( (Exponent (Exponent (Exponent (Var "c") (Var "a")) (Exponent (Var "c") (Var "b"))) (Exponent (Var "b") (Var "a")))
-                    )
+                    (Exponent (Exponent (Exponent (Var "c") (Var "a")) (Exponent (Var "c") (Var "b"))) (Exponent (Var "b") (Var "a")))
                 )
             )
     algebraArity example === Just 1
