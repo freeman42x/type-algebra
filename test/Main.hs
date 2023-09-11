@@ -7,7 +7,7 @@ import qualified Data.Map as M
 import Hedgehog (Gen, Group (..), Property, checkParallel, forAll, property, withTests, (===))
 import Hedgehog.Gen (element, unicodeAll)
 import Hedgehog.Main (defaultMain)
-import TypeAlgebra (Algebra (..), Variance (..), algebraArity, algebraSolutions, variance)
+import TypeAlgebra (Algebra (..), Cardinality(..), Variance (..), algebraArity, algebraSolutions, variance)
 import TypeAlgebra.Rules (RewriteLabel (RewriteArithmetic))
 
 main :: IO ()
@@ -106,7 +106,7 @@ propertyExampleBoolBool :: Property
 propertyExampleBoolBool =
   withTests 1 . property $ do
     let example = Exponent (Arity 2) (Arity 2) :: Algebra ()
-    algebraArity example === Just 4
+    algebraArity example === Just (Finite 4)
 
 propertyExamplePair :: Property
 propertyExamplePair =
@@ -115,7 +115,7 @@ propertyExamplePair =
           Forall
             ("a" :: String)
             (Exponent (Product (Var "a") (Var "a")) (Product (Var "a") (Var "a")))
-    algebraArity example === Just 4
+    algebraArity example === Just (Finite 4)
 
 propertyExampleCompose :: Property
 propertyExampleCompose =
@@ -130,7 +130,7 @@ propertyExampleCompose =
                     (Exponent (Exponent (Exponent (Var "c") (Var "a")) (Exponent (Var "c") (Var "b"))) (Exponent (Var "b") (Var "a")))
                 )
             )
-    algebraArity example === Just 1
+    algebraArity example === Just (Finite 1)
 
 propertyExampleMapMaybe :: Property
 propertyExampleMapMaybe =
@@ -145,22 +145,34 @@ propertyExampleMapMaybe =
                     (Exponent (Var "a") (Var "b"))
                 )
             )
-    algebraArity example === Just 2
+    algebraArity example === Just (Finite 2)
 
 propertyExampleIdentity :: Property
 propertyExampleIdentity =
   withTests 1 . property $ do
     let example = Forall ("x" :: String) (Exponent (Var "x") (Var "x"))
-    algebraArity example === Just 1
+    algebraArity example === Just (Finite 1)
 
 propertyExampleOne :: Property
 propertyExampleOne =
   withTests 1 . property $ do
     let example = Forall ("x" :: String) (Exponent (Product (Var "x") (Var "x")) (Var "x"))
-    algebraArity example === Just 1
+    algebraArity example === Just (Finite 1)
 
 propertyExampleTwo :: Property
 propertyExampleTwo =
   withTests 1 . property $ do
     let example = Forall ("x" :: String) (Exponent (Sum (Var "x") (Var "x")) (Var "x"))
-    algebraArity example === Just 2
+    algebraArity example === Just (Finite 2)
+
+propertyRecursiveVoid :: Property
+propertyRecursiveVoid =
+  withTests 1 . property $ do
+    let example = Forall ("x" :: String) (Exponent (Var "x") (Exponent (Var "x") (Var "x")))
+    algebraArity example === Just (Finite 0)
+
+propertyRecursiveInfinite :: Property
+propertyRecursiveInfinite =
+  withTests 1 . property $ do
+    let example = Forall ("x" :: String) (Exponent (Exponent (Var "x") (Var "x")) (Exponent (Var "x") (Var "x")))
+    algebraArity example === Just Infinite
