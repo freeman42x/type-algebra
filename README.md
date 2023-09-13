@@ -2,6 +2,11 @@
 
 Largely based on Alex's work on [Counting type inhabitants](https://alexknvl.com/posts/counting-type-inhabitants.html).
 
+Algebra used is `algebra of types` - used to do type algebra (rewrite types into isomorphic forms) on any language which has a subset similar to System F (polymorphic lambda calculus):
+
+* https://en.wikipedia.org/wiki/Algebraic_data_type#Theory
+* https://stanford-cs242.github.io/f19/lectures/03-2-algebraic-data-types.html#adt-theory
+
 We can perform algebra on types. For example, given a polymorphic type:
 
 ```
