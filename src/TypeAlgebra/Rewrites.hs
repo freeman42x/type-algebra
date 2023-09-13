@@ -35,9 +35,9 @@ arithmetic (Product a (Arity (Finite 1))) =
   Just a
 arithmetic (Product (Arity (Finite 1)) a) =
   Just a
-arithmetic (Exponent a (Arity 0)) =
-  Just (Arity 1)
-arithmetic (Exponent a (Arity 1)) =
+arithmetic (Exponent a (Arity (Finite 0))) =
+  Just (Arity (Finite 1))
+arithmetic (Exponent a (Arity (Finite 1))) =
   Just a
 arithmetic (Exponent (Arity a) (Arity b)) =
   Just (Arity (exponent a b))
