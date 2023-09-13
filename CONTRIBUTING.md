@@ -1,7 +1,7 @@
 # Priority Queue
 
 * can LLM do inhabitant counting
-* add a Mu type
+* add a [Mu type](https://hackage.haskell.org/package/data-fix-0.3.2/docs/Data-Fix.html#t:Mu)
 * add a rewrite from Forall to Mu
 * optimize proof efficiency
     * use existing proof solver to get better performance and not miss cases
