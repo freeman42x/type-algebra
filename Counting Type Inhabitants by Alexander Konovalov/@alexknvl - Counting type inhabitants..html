@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html -->
+<html lang="en" class=" gmzjpurd idc0_343"><head><meta charset="UTF-8"><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="./@alexknvl - Counting type inhabitants._files/analytics.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app228.us.archive.org';v.server_ms=474;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./@alexknvl - Counting type inhabitants._files/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="./@alexknvl - Counting type inhabitants._files/wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="./@alexknvl - Counting type inhabitants._files/ruffle.js"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("https://alexknvl.com/posts/counting-type-inhabitants.html","20211021212648","http://web.archive.org/","web","/_static/",
+	      "1634851608");
+</script>
+<link rel="stylesheet" type="text/css" href="./@alexknvl - Counting type inhabitants._files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./@alexknvl - Counting type inhabitants._files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+      <!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head><body><div id="MathJax_Message" style="display: none;"></div><div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;"><template shadowrootmode="closed"><div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;" class="">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=http%3A//web.archive.org/web/20211021212648/https%3A//alexknvl.com/posts/counting-type-inhabitants.html" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="http://web.archive.org/web/" title="Wayback Machine home page"><img src="http://web.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0"></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="http://web.archive.org/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://alexknvl.com/posts/counting-type-inhabitants.html" onfocus="this.focus();this.select();" style="flex:1;" autocomplete="off"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20211021212648"><input type="submit" value="Go">
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;"><a class="t" href="http://web.archive.org/web/*/https://alexknvl.com/posts/counting-type-inhabitants.html" title="See a list of every capture for this URL">9 captures</a><div class="r" title="Timespan for captures of this URL">6 Dec 2018 - 21 Oct 2021</div></div>
+        <div class="k">
+          <a href="http://web.archive.org/web/20090201000000/https://alexknvl.com/posts/counting-type-inhabitants.html" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="700" height="27" border="0"></canvas>
+            <div class="yt" style="display: none; width: 25px; height: 27px; left: 325px;"></div><div class="mt" style="display: none; width: 2px; height: 27px; left: 328px;"></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20201111192703/https://alexknvl.com/posts/counting-type-inhabitants.html" title="11 Nov 2020"><strong>Nov</strong></a></td>
+            <td class="c" id="displayMonthEl" title="You are here: 21:26:48 Oct 21, 2021">Oct</td>
+            <td class="f" nowrap="nowrap">Nov</td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20201111192703/https://alexknvl.com/posts/counting-type-inhabitants.html" title="19:27:03 Nov 11, 2020"><img src="http://web.archive.org/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0"></a></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 21:26:48 Oct 21, 2021">21</td>
+            <td class="f" nowrap="nowrap"><img src="http://web.archive.org/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20200511142236/https://alexknvl.com/posts/counting-type-inhabitants.html" title="11 May 2020"><strong>2020</strong></a></td>
+            <td class="c" id="displayYearEl" title="You are here: 21:26:48 Oct 21, 2021">2021</td>
+            <td class="f" nowrap="nowrap">2022</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html#" title="Share via My Web Archive" style="display: inline-block;">
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in" style="display: none;">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="http://web.archive.org/web/20211021212648/http://web.archive.org/screenshot/https://alexknvl.com/posts/counting-type-inhabitants.html" id="wm-screenshot" title="screenshot" style="visibility: hidden;">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html#" data-url="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html#" data-url="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top: 1px solid rgb(119, 119, 119); display: none; overflow: hidden;">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/commoncrawl)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/commoncrawl" target="_new"><span class="wm-title">Common Crawl</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Web crawl data from Common Crawl.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"><div data-delta="8528479000"><a href="http://web.archive.org/web/20220128142807js_/https://alexknvl.com/js/bootstrap.min.js" title="application/javascript">https://alexknvl.com/js/bootstrap.min.js</a><span title="Fri, 28 Jan 2022 14:28:07 GMT" style="color:red;"> +3 months 8 days</span></div><div data-delta="7641127000"><a href="http://web.archive.org/web/20220118075855cs_/https://alexknvl.com/css/default.css" title="text/css">https://alexknvl.com/css/default.css</a><span title="Tue, 18 Jan 2022 07:58:55 GMT" style="color:red;"> +2 months 28 days</span></div><div data-delta="7126818000"><a href="http://web.archive.org/web/20220112090706cs_/https://alexknvl.com/css/pygments.css" title="text/css">https://alexknvl.com/css/pygments.css</a><span title="Wed, 12 Jan 2022 09:07:06 GMT" style="color:red;"> +2 months 22 days</span></div><div data-delta="6518437000"><a href="http://web.archive.org/web/20220105080725cs_/https://alexknvl.com/css/bootstrap.min.css" title="text/css">https://alexknvl.com/css/bootstrap.min.css</a><span title="Wed, 05 Jan 2022 08:07:25 GMT" style="color:red;"> +2 months 15 days</span></div><div data-delta="7674000"><a href="http://web.archive.org/web/20211021191854js_/https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" title="application/javascript; charset=utf-8">https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML</a><span title="Thu, 21 Oct 2021 19:18:54 GMT" style=""> -2 hours 7 minutes</span></div><div data-delta="966000"><a href="http://web.archive.org/web/20211021214254js_/https://code.jquery.com/jquery-3.2.1.slim.min.js" title="application/javascript; charset=utf-8">https://code.jquery.com/jquery-3.2.1.slim.min.js</a><span title="Thu, 21 Oct 2021 21:42:54 GMT" style=""> +16 minutes 6 seconds</span></div><div data-delta="188000"><a href="http://web.archive.org/web/20211021212956cs_/https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500" title="text/css; charset=utf-8">https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500</a><span title="Thu, 21 Oct 2021 21:29:56 GMT" style=""> +3 minutes 8 seconds</span></div></div>
+      <div id="wm-capresources-loading" style="text-align: left; margin: 0px 20px 5px 5px; display: none;"><img src="http://web.archive.org/_static/images/loading.gif" alt="loading"></div>
+    </div>
+    </div>
+  </div></div></div><link rel="stylesheet" type="text/css" href="./@alexknvl - Counting type inhabitants._files/banner-styles.css"><link rel="stylesheet" type="text/css" href="./@alexknvl - Counting type inhabitants._files/iconochive.css"><div class="wb-autocomplete-suggestions "></div></template>
+</div><div id="wm-ipp-print">The Wayback Machine - http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","https://alexknvl.com/posts/counting-type-inhabitants.html","20211021212648",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ <basefont size="10">
+      
+      
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <meta name="description" content="Alexander Konovalov&#39;s personal web page">
+      <meta name="author" content="Alexander Konovalov">
+
+      <title>@alexknvl - Counting type inhabitants.</title>
+
+      <script type="text/javascript" async="" src="./@alexknvl - Counting type inhabitants._files/MathJax.js">
+      </script>
+      <link rel="stylesheet" href="./@alexknvl - Counting type inhabitants._files/css">
+      <link rel="stylesheet" href="./@alexknvl - Counting type inhabitants._files/pygments.css">
+
+      <link rel="stylesheet" href="./@alexknvl - Counting type inhabitants._files/bootstrap.min.css">
+      <link rel="stylesheet" href="./@alexknvl - Counting type inhabitants._files/default.css">
+
+      <meta name="google-site-verification" content="PCzz3y-lpx3bKUj0KKMHf7_yew64kL6G1pX69eRcW18">
+  
+  
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/counting-type-inhabitants.html#">Alexander Konovalov</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="http://web.archive.org/web/20211021212648/https://alexknvl.com/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://web.archive.org/web/20211021212648/https://github.com/alexknvl/" target="_blank">Github</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://web.archive.org/web/20211021212648/https://twitter.com/alexknvl" target="_blank">Twitter</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://web.archive.org/web/20211021212648/https://bitbucket.org/alexknvl/" target="_blank">Bitbucket</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://web.archive.org/web/20211021212648/https://www.linkedin.com/in/alexander-konovalov-b5895476/" target="_blank">LinkedIn</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://web.archive.org/web/20211021212648/https://alexknvl.com/docs/cv.pdf" target="_blank">CV</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main role="main">
+      <div class="container">
+        <big>
+          <div id="Content">
+            <article>
+  <section class="header">
+    <h1 id="page-title">Counting type inhabitants.</h1>
+    <div id="post-last-modified">
+      Last modified on April 20, 2019
+      
+        by Alex
+      
+    </div>
+  </section>
+  <hr><br>
+  <section>
+    <h1 id="preamble">Preamble</h1>
+<p>For Scala readers: Haskell’s <code>Void</code> type can be assumed to be roughly equivalent to <code>Nothing</code>. Neither has any inhabitants other than diverging or erroneous expressions that fail at runtime. <code>Maybe</code> is the same as <code>Option</code>, except its empty case is called <code>Nothing</code> and its non-empty case is called <code>Just</code>.</p>
+<p>For Haskell readers: <code>Any</code> in Scala is roughly equivalent to</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">data</span> <span class="dt">Any</span> <span class="ot">=</span> <span class="kw">forall</span> a<span class="op">.</span> <span class="dt">Any</span> a</a></code></pre></div>
+<p>the least informative existential type.</p>
+<p>I will write <code>forall</code> interchangeably with <code>∀</code>.</p>
+<h1 id="type-inhabitants">Type inhabitants</h1>
+<p>An <em>inhabitant</em> of a type <code>T</code> is any expression <code>e : T</code> of type <code>T</code>. It is of importance to be able to ascertain the number of such inhabitants for a variety of types in pure functional languages since:</p>
+<ul>
+<li>Knowing that a complicated polymorphic type has only a small number of inhabitants (e.g.�&nbsp;<code>forall a. a -&gt; a</code> having only one inhabitant) means that we can partially or fully understand its behavior based on the type alone without referring to a particular implementation.</li>
+<li>Knowing that a <code>T</code> has only one inhabitant <code>e : T</code> allows us to simplify any complicated <code>complicated_expression : T</code> and replace it with <code>e : T</code>.</li>
+<li>If we can find the number of inhabitants, we can likely also enumerate them. This allows for type-based auto-completion a la https://twitter.com/edwinbrady/status/1052913078927613954.</li>
+<li>Proving that a type <code>P</code> has inhabitants is equivalent to proving <a href="http://web.archive.org/web/20211021212648/https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence">the corresponding theorem</a> <code>P</code>.</li>
+<li>If we can automatically prove that a type has no inhabitants, we can save the developer some time:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb2-1" title="1"><span class="ot">foo ::</span> <span class="dt">SomeTypeThatIsUninhabited</span> <span class="ot">-&gt;</span> <span class="dt">Something</span></a>
+<a class="sourceLine" id="cb2-2" title="2">foo x <span class="ot">=</span> impossible</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co">-- Idris has something like that.</span></a></code></pre></div>
+<p>There might be some confusion regarding what exactly we mean by “inhabitants”, e.g.�&nbsp;are <code>1 + 1</code> and <code>2</code> different inhabitants of type <code>Int</code>? This is a rather deep topic (that I will cover in a future blog post), but for now we will treat two expressions of type <code>a</code> to be separate inhabitants of <code>a</code> if and only if there is some predicate <code>f : a -&gt; Bool</code> that distinguishes between then. So all of the following definitions define equal inhabitants of their respective types:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb3-1" title="1"><span class="ot">foo1 ::</span> <span class="dt">Int</span></a>
+<a class="sourceLine" id="cb3-2" title="2">foo1 <span class="ot">=</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-3" title="3">foo1 <span class="ot">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb3-4" title="4"></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="ot">foo2 ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span></a>
+<a class="sourceLine" id="cb3-6" title="6">foo2 <span class="ot">=</span> \x <span class="ot">-&gt;</span> x <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-7" title="7">foo2 <span class="ot">=</span> \x <span class="ot">-&gt;</span> x <span class="op">+</span> <span class="dv">2</span> <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-8" title="8">foo2 <span class="ot">=</span> \y <span class="ot">-&gt;</span> y <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-9" title="9">foo2 x <span class="ot">=</span> x <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-10" title="10">foo2 <span class="ot">=</span> \y <span class="ot">-&gt;</span> (\x <span class="ot">-&gt;</span> x <span class="op">+</span> <span class="dv">1</span>) y</a>
+<a class="sourceLine" id="cb3-11" title="11"></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="ot">foo4 ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> ()</a>
+<a class="sourceLine" id="cb3-13" title="13">foo4 x <span class="ot">=</span> ()</a>
+<a class="sourceLine" id="cb3-14" title="14">foo4 x <span class="ot">=</span> <span class="kw">case</span> x <span class="kw">of</span></a>
+<a class="sourceLine" id="cb3-15" title="15">  <span class="dv">10</span> <span class="ot">-&gt;</span> ()</a>
+<a class="sourceLine" id="cb3-16" title="16">  x  <span class="ot">-&gt;</span> ()</a></code></pre></div>
+<p>while these are different</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb4-1" title="1"><span class="ot">foo1 ::</span> <span class="dt">Int</span></a>
+<a class="sourceLine" id="cb4-2" title="2">foo1 <span class="ot">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-3" title="3">foo1 <span class="ot">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="ot">foo2 ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span></a>
+<a class="sourceLine" id="cb4-6" title="6">foo2 <span class="ot">=</span> \x <span class="ot">-&gt;</span> x</a>
+<a class="sourceLine" id="cb4-7" title="7">foo2 x <span class="ot">=</span> <span class="kw">case</span> x <span class="kw">of</span></a>
+<a class="sourceLine" id="cb4-8" title="8">  <span class="dv">1</span> <span class="ot">-&gt;</span> <span class="dv">100</span></a>
+<a class="sourceLine" id="cb4-9" title="9">  x <span class="ot">-&gt;</span> x</a>
+<a class="sourceLine" id="cb4-10" title="10"></a>
+<a class="sourceLine" id="cb4-11" title="11"><span class="ot">foo3 ::</span> <span class="kw">forall</span> a<span class="op">.</span> (a, a) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb4-12" title="12">foo3 (x, y) <span class="ot">=</span> x</a>
+<a class="sourceLine" id="cb4-13" title="13">foo3 (x, y) <span class="ot">=</span> y</a></code></pre></div>
+<p>There are a few interesting examples of seemingly different expressions being the same inhabitants of a type that might seem completely counter-intuitive at first, such as:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb5-1" title="1"><span class="ot">foo1 ::</span> <span class="dt">Void</span> <span class="ot">-&gt;</span> <span class="dt">Int</span></a>
+<a class="sourceLine" id="cb5-2" title="2">foo1 x <span class="ot">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb5-3" title="3">foo1 x <span class="ot">=</span> <span class="dv">3</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="co">-- Consider writing a predicate (Void -&gt; Int) -&gt; Bool</span></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="co">-- that distinguishes between them. Can you do it?</span></a>
+<a class="sourceLine" id="cb5-6" title="6"></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="ot">foo2 ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> ()</a>
+<a class="sourceLine" id="cb5-8" title="8">foo2 x <span class="ot">=</span> ()</a>
+<a class="sourceLine" id="cb5-9" title="9">foo2 x <span class="ot">=</span> <span class="kw">if</span> isPrime <span class="dv">2147483647</span> <span class="kw">then</span> () <span class="kw">else</span> ()</a>
+<a class="sourceLine" id="cb5-10" title="10"><span class="co">-- These are the same even though they might take</span></a>
+<a class="sourceLine" id="cb5-11" title="11"><span class="co">-- different amount of time to run. Performance is</span></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="co">-- out of the picture for now.</span></a>
+<a class="sourceLine" id="cb5-13" title="13"></a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="ot">foo3 ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Any</span></a>
+<a class="sourceLine" id="cb5-15" title="15">foo3 x <span class="ot">=</span> <span class="dt">Any</span> x</a>
+<a class="sourceLine" id="cb5-16" title="16">foo3 x <span class="ot">=</span> <span class="dt">Any</span> <span class="dt">True</span></a>
+<a class="sourceLine" id="cb5-17" title="17">foo3 x <span class="ot">=</span> <span class="dt">Any</span> ()</a>
+<a class="sourceLine" id="cb5-18" title="18"><span class="co">-- These are the same because distinguishing between</span></a>
+<a class="sourceLine" id="cb5-19" title="19"><span class="co">-- different Any values without violating parametricity</span></a>
+<a class="sourceLine" id="cb5-20" title="20"><span class="co">-- is impossible. See</span></a>
+<a class="sourceLine" id="cb5-21" title="21"><span class="co">-- https://alexknvl.com/posts/any-is-final-object.html</span></a></code></pre></div>
+<p>Our notion of equivalence between type inhabitants is <a href="http://web.archive.org/web/20211021212648/https://en.wikipedia.org/wiki/Observational_equivalence">observational equivalence</a>. We will denote equality in the above sense as <code>a = b</code>. <code>a</code> and <code>b</code> must be of the same type but they might be either values or expressions.</p>
+<h1 id="isomorphisms">Isomorphisms</h1>
+<p>We will define an <em>isomorphism</em> between two types <code>a</code> and <code>b</code> as two functions, <code>to : a -&gt; b</code> and <code>from : b -&gt; a</code> such that <code>to . from = id</code> and <code>from . to = id</code>. The existence of an isomorphism between two types will be denoted as <code>a ~ b</code>.</p>
+<p>When we say that <code>a ~ b</code> is witnessed by <code>to</code> and <code>from</code>, we mean that <code>to</code> and <code>from</code> form one particular isomorphism between <code>a</code> and <code>b</code>. Ideally we should also prove that <code>to . from = id</code> and <code>from . to = id</code>, but we will usually omit such proofs. Proving these equalities in polymorphic lambda calculus often relies on parametricity.</p>
+<p>Isomorphisms are <em>the tool</em> for counting type inhabitants since isomorphic types have the same number of type inhabitants. For example, <code>Either () () ~ Bool</code>, where we can witness the isomophism by</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb6-1" title="1"><span class="ot">to ::</span> <span class="dt">Either</span> () () <span class="ot">-&gt;</span> <span class="dt">Bool</span></a>
+<a class="sourceLine" id="cb6-2" title="2">to (<span class="dt">Right</span> ()) <span class="ot">=</span> <span class="dt">True</span></a>
+<a class="sourceLine" id="cb6-3" title="3">to (<span class="dt">Left</span> ())  <span class="ot">=</span> <span class="dt">False</span></a>
+<a class="sourceLine" id="cb6-4" title="4"></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="ot">from ::</span> <span class="dt">Bool</span> <span class="ot">-&gt;</span> <span class="dt">Either</span> () ()</a>
+<a class="sourceLine" id="cb6-6" title="6">from <span class="dt">True</span> <span class="ot">=</span> <span class="dt">Right</span> ()</a>
+<a class="sourceLine" id="cb6-7" title="7">from <span class="dt">False</span> <span class="ot">=</span> <span class="dt">Left</span> ()</a></code></pre></div>
+<p>Using isomorphisms for counting necessitates having types with specific inhabitant counts. For example <code>Either () Bool</code> is isomorphic to a type with 3 inhabitants that we could define as <code>data Three = One | Two | Three</code>. Dependently typed languages like Idris allow us to write <code>Fin 3</code> in place of <code>Three</code>. Neither option is quite satisfactory since we will be dealing with such types all the time and “Fin 3” is 4 characters too many. We will denote such types simply as <code>3</code> (<code>3 : Type</code>). Scala developers should be careful not to confuse that with singleton type <code>3 &lt;: Int with Singleton</code>, which has only 1 inhabitant in Scala.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb7-1" title="1"><span class="dt">Void</span>       <span class="op">~</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb7-2" title="2">()         <span class="op">~</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="dt">Bool</span>       <span class="op">~</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="dt">Three</span>      <span class="op">~</span> <span class="dv">3</span></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="dt">Fin</span> <span class="dv">3</span>      <span class="op">~</span> <span class="dv">3</span></a>
+<a class="sourceLine" id="cb7-6" title="6"><span class="dt">Fin</span> <span class="dv">10</span>     <span class="op">~</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="dt">Int</span>        <span class="op">~</span> <span class="dv">2</span><span class="op">^</span><span class="dv">32</span></a>
+<a class="sourceLine" id="cb7-8" title="8"><span class="dt">Any</span>        <span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<h5 id="coproducts-either-like-types">Coproducts, “<code>Either</code>-like” types</h5>
+<p>We have already established that <code>Either () () ~ Bool ~ 2</code>, but can we generalize this to an arbitrary <code>Either a b</code>? <code>e : Either a b</code> is either a value of type <code>a</code> or a value of type <code>b</code>, which seems to imply that the total number of inhabitants should be the sum of the number of inhabitants of both types <code>a</code> and <code>b</code>, e.g.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb8-1" title="1"><span class="dt">Either</span> () ()     <span class="op">~</span> <span class="dv">2</span> <span class="ot">=</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="dt">Either</span> () <span class="dt">Bool</span>   <span class="op">~</span> <span class="dv">3</span> <span class="ot">=</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="dt">Either</span> <span class="dt">Bool</span> ()   <span class="op">~</span> <span class="dv">3</span> <span class="ot">=</span> <span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="dt">Either</span> <span class="dt">Bool</span> <span class="dt">Bool</span> <span class="op">~</span> <span class="dv">4</span> <span class="ot">=</span> <span class="dv">2</span> <span class="op">+</span> <span class="dv">2</span></a></code></pre></div>
+<p>As an exercise, see if you can find a witness for the last isomorphism:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">data</span> <span class="dt">Four</span> <span class="ot">=</span> <span class="dt">One</span> <span class="op">|</span> <span class="dt">Two</span> <span class="op">|</span> <span class="dt">Three</span> <span class="op">|</span> <span class="dt">Four</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="ot">to ::</span> <span class="dt">Either</span> <span class="dt">Bool</span> <span class="dt">Bool</span> <span class="ot">-&gt;</span> <span class="dt">Four</span></a>
+<a class="sourceLine" id="cb9-3" title="3">to <span class="ot">=</span> <span class="op">...</span></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="ot">from ::</span> <span class="dt">Four</span> <span class="ot">-&gt;</span> <span class="dt">Either</span> <span class="dt">Bool</span> <span class="dt">Bool</span></a>
+<a class="sourceLine" id="cb9-5" title="5">from <span class="ot">=</span> <span class="op">...</span></a></code></pre></div>
+<p>We arrive at the following formula…</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb10-1" title="1"><span class="dt">Either</span> a b <span class="op">~</span> a <span class="op">+</span> b</a></code></pre></div>
+<p>but what do we mean by <code>+</code> here? Surely you can not just <em>add</em> types! Clearly, we need to update our notion of types to allow such frivolities.</p>
+<h5 id="temporary-notation">Temporary notation</h5>
+<p>First, we’ll introduce a new notation <code>|_| : Type ⟶ ℕ</code>, which maps types to their inhabitant counts. Note that this notation is part of our meta-language and <em>not</em> of the programming language. We will also need <code>[_] : ℕ ⟶ Type</code>, which maps natural numbers to our newly introduced types <code>1</code>, <code>2</code>, etc.</p>
+<p>Now we can write our formula more rigorously:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb11-1" title="1"><span class="dt">Either</span> a b <span class="op">~</span> [<span class="op">|</span>a<span class="op">|</span> <span class="op">+</span> <span class="op">|</span>b<span class="op">|</span>]</a></code></pre></div>
+<p>We will revise our notation at the end of this section, but for now it will do.</p>
+<h5 id="products-a.k.a.-tuples">Products, a.k.a. tuples</h5>
+<p>Let’s look at tuples now.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb12-1" title="1">(<span class="dt">Bool</span>, ())   <span class="op">~</span> <span class="dt">Bool</span> <span class="op">~</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb12-2" title="2">(<span class="dt">Bool</span>, <span class="dt">Bool</span>) <span class="op">~</span> <span class="dt">Four</span> <span class="op">~</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb12-3" title="3">(<span class="dt">Void</span>, <span class="dt">Int</span>)  <span class="op">~</span> <span class="dt">Void</span></a>
+<a class="sourceLine" id="cb12-4" title="4">(<span class="dt">Int</span>, <span class="dt">Int</span>)   <span class="op">~</span> <span class="dt">Long</span></a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="co">-- Or in other words,</span></a>
+<a class="sourceLine" id="cb12-6" title="6">(<span class="dt">Word32</span>, <span class="dt">Word32</span>) <span class="op">~</span> <span class="dt">Word64</span></a>
+<a class="sourceLine" id="cb12-7" title="7">(<span class="dt">Bool</span>, <span class="dt">Bool</span>, <span class="dt">Bool</span>) <span class="op">~</span> <span class="dv">8</span></a></code></pre></div>
+<p>As an exercise, convince yourself that all of the above isomorphisms are “true” (can be witnessed by some functions <code>to</code> and <code>from</code>).</p>
+<p>An <code>e : (a, b)</code> is a tuple of some <code>x : a</code> and some <code>y : b</code>. If there are <code>|a|</code> ways to choose such an <code>x</code> and <code>|b|</code> ways to choose a <code>y</code>, the total number of possible <code>e</code> is <code>|a| * |b|</code>, or in other words:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb13-1" title="1">(a, b) <span class="op">~</span> [<span class="op">|</span>a<span class="op">|</span> <span class="op">*</span> <span class="op">|</span>b<span class="op">|</span>]</a>
+<a class="sourceLine" id="cb13-2" title="2">(a, b, c) <span class="op">~</span> [<span class="op">|</span>a<span class="op">|</span> <span class="op">*</span> <span class="op">|</span>b<span class="op">|</span> <span class="op">*</span> <span class="op">|</span>c<span class="op">|</span>]</a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="co">-- and so on</span></a></code></pre></div>
+<h5 id="algebraic-data-types">Algebraic data types</h5>
+<p>An arbitrary ADT such as</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">data</span> <span class="dt">Foo</span> <span class="ot">=</span> <span class="dt">Bar</span> <span class="op">|</span> <span class="dt">Baz</span> <span class="dt">Bool</span> <span class="op">|</span> <span class="dt">Baf</span> <span class="dt">Int</span></a></code></pre></div>
+<p>can be represented in the “coproduct of products” form, <code>Foo ~ Either () (Either Bool Int)</code> (write a witness as an exercise).</p>
+<p>This means that</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb15-1" title="1"><span class="dt">Foo</span> <span class="op">~</span> [<span class="dv">1</span> <span class="op">+</span> (<span class="dv">2</span> <span class="op">+</span> <span class="dv">2</span><span class="op">^</span><span class="dv">32</span>)] <span class="op">~</span> [<span class="dv">2</span><span class="op">^</span><span class="dv">32</span> <span class="op">+</span> <span class="dv">3</span>]</a></code></pre></div>
+<p>This also works for types taking type parameters, <code>Maybe a ~ Either () a</code>,</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb16-1" title="1"><span class="dt">Maybe</span> a <span class="op">~</span> [<span class="dv">1</span> <span class="op">+</span> <span class="op">|</span>a<span class="op">|</span>]</a></code></pre></div>
+<h5 id="functions">Functions</h5>
+<p>A function <code>f : a -&gt; b</code> assigns a single value <code>y : b</code> for every possible value <code>x : a</code>, so it is equivalent to a very large tuple of <code>b</code>’s, with a total of <code>|a|</code> <code>b</code>’s. This means that the number of inhabitants of <code>a -&gt; b</code> is <code>|b| * |b | * ... * |b|</code> (<code>|a|</code> times) or in other words:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb17-1" title="1">a <span class="ot">-&gt;</span> b <span class="op">~</span> [<span class="op">|</span>b<span class="op">|</span> <span class="op">^</span> <span class="op">|</span>a<span class="op">|</span>]</a></code></pre></div>
+<p>As an exercise, see if you can write the corresponding witness (in Idris):</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">data</span> <span class="dt">Sized</span> <span class="op">:</span> (t <span class="op">:</span> <span class="dt">Type</span>) <span class="ot">-&gt;</span> (n <span class="op">:</span> <span class="dt">Nat</span>) <span class="ot">-&gt;</span> <span class="dt">Type</span> <span class="kw">where</span></a>
+<a class="sourceLine" id="cb18-2" title="2">  <span class="dt">MkSized</span> <span class="op">:</span> <span class="dt">Iso</span> t (<span class="dt">Fin</span> n) <span class="ot">-&gt;</span> <span class="dt">Sized</span> t n</a>
+<a class="sourceLine" id="cb18-3" title="3"></a>
+<a class="sourceLine" id="cb18-4" title="4">proof <span class="op">:</span> <span class="dt">Sized</span> a n <span class="ot">-&gt;</span> <span class="dt">Sized</span> b m <span class="ot">-&gt;</span> <span class="dt">Sized</span> (a <span class="ot">-&gt;</span> b) (m <span class="op">^</span> n)</a></code></pre></div>
+<p>As we will see later, <code>a -&gt; b</code> is a little bit different from coproducts and products in the way it interacts with <code>forall a.</code> when we have (parametric) type polymorphism. The above formula can be used <em>only</em> if <code>a</code> and <code>b</code> are free from any universally quantified variables.</p>
+<h5 id="simpler-notation">Simpler notation</h5>
+<p>From this point on, we will write type <code>a</code> to mean any type <code>x</code> such that <code>x ~ a</code>. In other words, we will conflate <code>a</code> and the equivalence class of <code>a</code> with respect to <code>~</code>. Types like <code>Bool</code>, <code>2</code>, and <code>Either () ()</code> will be treated as if they are the same.</p>
+<p>This notational trick allows us to write <code>Either a b ~ a + b</code> or <code>(a, b) ~ a * b</code> without explicitly lifting and unlifting <code>a</code> and <code>b</code> to the realm of natural numbers.</p>
+<p>We will write <code>a &gt; 0</code> to mean that <code>a</code> has at least one inhabitant.</p>
+<h5 id="currying-and-uncurrying">Currying and uncurrying</h5>
+<p>Another two useful isomorphisms on functions are</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb19-1" title="1">(a, b) <span class="ot">-&gt;</span> c</a>
+<a class="sourceLine" id="cb19-2" title="2"><span class="op">~</span> a <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> c</a>
+<a class="sourceLine" id="cb19-3" title="3"></a>
+<a class="sourceLine" id="cb19-4" title="4">(a, b, c) <span class="ot">-&gt;</span> d</a>
+<a class="sourceLine" id="cb19-5" title="5"><span class="op">~</span> a <span class="ot">-&gt;</span> (b, c) <span class="ot">-&gt;</span> d</a>
+<a class="sourceLine" id="cb19-6" title="6"><span class="op">~</span> (a, b) <span class="ot">-&gt;</span> c <span class="ot">-&gt;</span> d</a>
+<a class="sourceLine" id="cb19-7" title="7"><span class="op">~</span> (a, c) <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> d</a>
+<a class="sourceLine" id="cb19-8" title="8"><span class="op">~</span> a <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> c <span class="ot">-&gt;</span> d</a>
+<a class="sourceLine" id="cb19-9" title="9"><span class="co">-- and so on</span></a></code></pre></div>
+<p>and</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb20-1" title="1"><span class="co">-- note our use of `+` and `*` notation</span></a>
+<a class="sourceLine" id="cb20-2" title="2">a <span class="ot">-&gt;</span> (b, c)</a>
+<a class="sourceLine" id="cb20-3" title="3"><span class="op">~</span> (a <span class="ot">-&gt;</span> b) <span class="op">*</span> (a <span class="ot">-&gt;</span> c)</a>
+<a class="sourceLine" id="cb20-4" title="4"></a>
+<a class="sourceLine" id="cb20-5" title="5">a <span class="ot">-&gt;</span> (b, c, d)</a>
+<a class="sourceLine" id="cb20-6" title="6"><span class="op">~</span> (a <span class="ot">-&gt;</span> (b, c)) <span class="op">*</span> (a <span class="ot">-&gt;</span> d)</a>
+<a class="sourceLine" id="cb20-7" title="7"><span class="op">~</span> (a <span class="ot">-&gt;</span> b) <span class="op">*</span> (a <span class="ot">-&gt;</span> (c, d))</a>
+<a class="sourceLine" id="cb20-8" title="8"><span class="op">~</span> (a <span class="ot">-&gt;</span> (b, d)) <span class="op">*</span> (a <span class="ot">-&gt;</span> c)</a>
+<a class="sourceLine" id="cb20-9" title="9"><span class="op">~</span> (a <span class="ot">-&gt;</span> b) <span class="op">*</span> (a <span class="ot">-&gt;</span> c) <span class="op">*</span> (a <span class="ot">-&gt;</span> d)</a></code></pre></div>
+<p>A somewhat similar isomorphism holds for coproducts:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb21-1" title="1">(a <span class="op">+</span> b) <span class="ot">-&gt;</span> c</a>
+<a class="sourceLine" id="cb21-2" title="2"><span class="op">~</span> (a <span class="ot">-&gt;</span> c) <span class="op">*</span> (b <span class="ot">-&gt;</span> c)</a>
+<a class="sourceLine" id="cb21-3" title="3"></a>
+<a class="sourceLine" id="cb21-4" title="4">(a <span class="op">+</span> b <span class="op">+</span> c) <span class="ot">-&gt;</span> z</a>
+<a class="sourceLine" id="cb21-5" title="5"><span class="op">~</span> (a <span class="ot">-&gt;</span> z) <span class="op">*</span> (b <span class="ot">-&gt;</span> z) <span class="op">*</span> (c <span class="ot">-&gt;</span> z)</a>
+<a class="sourceLine" id="cb21-6" title="6"><span class="co">-- and so on...</span></a></code></pre></div>
+<p>Corollary:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb22-1" title="1">(n <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> (m <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> x <span class="op">~</span> ((n <span class="op">+</span> m) <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> x</a></code></pre></div>
+<h5 id="introduction-rules">Introduction rules</h5>
+<p>These might seem rather pointless but they will turn out to be invaluable once we get to polymorphic lambda calculus:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb23-1" title="1"><span class="dv">1</span> <span class="op">~</span> a <span class="ot">-&gt;</span> <span class="dv">1</span> <span class="co">-- for any a</span></a>
+<a class="sourceLine" id="cb23-2" title="2"><span class="dv">1</span> <span class="op">~</span> <span class="dv">0</span> <span class="ot">-&gt;</span> a <span class="co">-- for any a</span></a>
+<a class="sourceLine" id="cb23-3" title="3"><span class="dv">0</span> <span class="op">~</span> a <span class="ot">-&gt;</span> <span class="dv">0</span> <span class="co">-- for any a, |a| &gt; 0</span></a>
+<a class="sourceLine" id="cb23-4" title="4">a <span class="op">~</span> <span class="dv">1</span> <span class="ot">-&gt;</span> a <span class="co">-- for any a</span></a></code></pre></div>
+<p>and as corollaries</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb24-1" title="1">a <span class="ot">-&gt;</span> x <span class="op">~</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> x <span class="co">-- for any a and x</span></a>
+<a class="sourceLine" id="cb24-2" title="2">     x <span class="op">~</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> x <span class="co">-- for any a and x</span></a>
+<a class="sourceLine" id="cb24-3" title="3"></a>
+<a class="sourceLine" id="cb24-4" title="4">(a, a)</a>
+<a class="sourceLine" id="cb24-5" title="5"><span class="op">~</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> a, <span class="dv">1</span> <span class="ot">-&gt;</span> a)</a>
+<a class="sourceLine" id="cb24-6" title="6"><span class="op">~</span> (<span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span>) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb24-7" title="7"><span class="op">~</span> <span class="dv">2</span> <span class="ot">-&gt;</span> a</a></code></pre></div>
+<h5 id="distributing-over">Distributing <code>*</code> over <code>+</code></h5>
+<p>Why are <code>struct</code>s and <code>enum</code>s in C/C++ are inadequate for representing types? Why do functional languages use coproducts of products representation (<a href="http://web.archive.org/web/20211021212648/https://en.wikipedia.org/wiki/Algebraic_data_type">algebraic data types</a>) of data types rather than something more complicated?</p>
+<p>We can answer these questions by pointing out the following isomorphism:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb25-1" title="1">a <span class="op">*</span> (b <span class="op">+</span> c) <span class="op">~</span> a <span class="op">*</span> b <span class="op">+</span> a <span class="op">*</span> c</a></code></pre></div>
+<p>This isomorphism allows us to distribute <code>*</code> (products) over <code>+</code> (coproducts), which means that we can take any complicated type consisting of any combination of products and coproducts and arrive at a flattened representation that is isomorphic to the original type:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb26-1" title="1">(a <span class="op">*</span> (b <span class="op">+</span> c)) <span class="op">*</span> (d <span class="op">+</span> (e <span class="op">*</span> g))</a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="op">~</span> (a <span class="op">*</span> b <span class="op">+</span> a <span class="op">*</span> c) <span class="op">*</span> (d <span class="op">+</span> (e <span class="op">*</span> g))</a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="op">~</span> (a <span class="op">*</span> b <span class="op">+</span> a <span class="op">*</span> c) <span class="op">*</span> d <span class="op">+</span> (a <span class="op">*</span> b <span class="op">+</span> a <span class="op">*</span> c) <span class="op">*</span> (e <span class="op">*</span> g)</a>
+<a class="sourceLine" id="cb26-4" title="4"><span class="op">~</span> a <span class="op">*</span> b <span class="op">*</span> d <span class="op">+</span> a <span class="op">*</span> c <span class="op">*</span> d <span class="op">+</span> (a <span class="op">*</span> b <span class="op">+</span> a <span class="op">*</span> c) <span class="op">*</span> (e <span class="op">*</span> g)</a>
+<a class="sourceLine" id="cb26-5" title="5"><span class="op">~</span> a <span class="op">*</span> b <span class="op">*</span> d <span class="op">+</span> a <span class="op">*</span> c <span class="op">*</span> d <span class="op">+</span> a <span class="op">*</span> b <span class="op">*</span> e <span class="op">*</span> g <span class="op">+</span> a <span class="op">*</span> c <span class="op">*</span> e <span class="op">*</span> g</a></code></pre></div>
+<p>If you are familiar with mathematical logic, ADTs are <a href="http://web.archive.org/web/20211021212648/https://en.wikipedia.org/wiki/Disjunctive_normal_form">the disjunctive normal form</a> of types.</p>
+<h5 id="combining-it-all-together">Combining it all together</h5>
+<div class="sourceCode" id="cb27"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb27-1" title="1"><span class="dt">Either</span> <span class="dt">Bool</span> (<span class="dt">Maybe</span> <span class="dt">Bool</span>)</a>
+<a class="sourceLine" id="cb27-2" title="2"><span class="op">~</span> <span class="dv">2</span> <span class="op">+</span> (<span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb27-3" title="3"><span class="op">~</span> <span class="dv">5</span></a></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb28-1" title="1"><span class="dt">Bool</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span></a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="op">~</span> <span class="dv">2</span> <span class="ot">-&gt;</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb28-3" title="3"><span class="op">~</span> <span class="dv">2</span><span class="op">^</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb28-4" title="4"><span class="op">~</span> <span class="dv">4</span></a></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb29-1" title="1"><span class="dt">Maybe</span> <span class="dt">Bool</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span></a>
+<a class="sourceLine" id="cb29-2" title="2"><span class="op">~</span> (<span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span>) <span class="ot">-&gt;</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb29-3" title="3"><span class="op">~</span> <span class="dv">2</span><span class="op">^</span><span class="dv">3</span></a>
+<a class="sourceLine" id="cb29-4" title="4"><span class="op">~</span> <span class="dv">8</span></a></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb30-1" title="1"><span class="dt">Bool</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> <span class="dt">Bool</span></a>
+<a class="sourceLine" id="cb30-2" title="2"><span class="op">~</span> <span class="dv">2</span> <span class="ot">-&gt;</span> (<span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb30-3" title="3"><span class="op">~</span> <span class="dv">3</span><span class="op">^</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb30-4" title="4"><span class="op">~</span> <span class="dv">9</span></a></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb31-1" title="1">(<span class="dt">Bool</span>, <span class="dt">Bool</span>, <span class="dt">Bool</span>) <span class="ot">-&gt;</span> ()</a>
+<a class="sourceLine" id="cb31-2" title="2"><span class="op">~</span> (<span class="dv">2</span> <span class="op">*</span> <span class="dv">2</span> <span class="op">*</span> <span class="dv">2</span>) <span class="ot">-&gt;</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb31-3" title="3"><span class="op">~</span> <span class="dv">1</span><span class="op">^</span><span class="dv">8</span></a>
+<a class="sourceLine" id="cb31-4" title="4"><span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb32-1" title="1"><span class="dt">Bool</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span> <span class="ot">-&gt;</span> (<span class="dt">Either</span> <span class="dt">Bool</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> <span class="dt">Bool</span></a>
+<a class="sourceLine" id="cb32-2" title="2"><span class="op">~</span> (<span class="dt">Bool</span>, <span class="dt">Bool</span>, (<span class="dt">Either</span> <span class="dt">Bool</span> <span class="dt">Bool</span>)) <span class="ot">-&gt;</span> <span class="dt">Bool</span></a>
+<a class="sourceLine" id="cb32-3" title="3"><span class="op">~</span> (<span class="dv">2</span> <span class="op">*</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">2</span> <span class="op">*</span> <span class="dv">2</span>)) <span class="ot">-&gt;</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb32-4" title="4"><span class="op">~</span> <span class="dv">2</span> <span class="op">^</span> <span class="dv">16</span></a></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb33-1" title="1">() <span class="ot">-&gt;</span> <span class="dt">Bool</span></a>
+<a class="sourceLine" id="cb33-2" title="2"><span class="op">~</span> <span class="dv">1</span> <span class="ot">-&gt;</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb33-3" title="3"><span class="op">~</span> <span class="dv">2</span></a></code></pre></div>
+<p>Please see <a href="http://web.archive.org/web/20211021212648/https://alexknvl.com/posts/any-is-final-object.html">Any is a final object</a> for an explanation of this one.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb34-1" title="1"><span class="dt">Any</span> <span class="ot">-&gt;</span> ()</a>
+<a class="sourceLine" id="cb34-2" title="2"><span class="op">~</span> <span class="dv">1</span> <span class="ot">-&gt;</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb34-3" title="3"><span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<h5 id="sets-and-non-regular-types-1">Sets and non-regular types <a href="http://web.archive.org/web/20211021212648/https://www.youtube.com/watch?v=YScIPA8RbVE">[1]</a></h5>
+<p>Consider the type of <code>Set a</code>, an abstract type of sets containing objects of type <code>a</code>. Neither Haskell nor Scala have precisely the type we want, since neither language use the correct notion of equality (observational equality), but both come close enough for our purposes.</p>
+<p>In order to calculate <code>|Set a|</code>, we first note that <em>a set</em> is either a set of 0 elements, or a set of 1 element, or a set of 2 elements, and so on.</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb35-1" title="1"><span class="op">|</span><span class="dt">Set</span> a<span class="op">|</span> <span class="ot">=</span> <span class="op">|</span><span class="dt">Set</span>₀ a<span class="op">|</span> <span class="op">+</span> <span class="op">|</span><span class="dt">Set</span>₁ a<span class="op">|</span> <span class="op">+</span> <span class="op">|</span><span class="dt">Set</span>₂ a<span class="op">|</span> <span class="op">+</span> <span class="op">...</span></a>
+<a class="sourceLine" id="cb35-2" title="2"><span class="op">|</span><span class="dt">Set</span>₀ a<span class="op">|</span> <span class="ot">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb35-3" title="3"><span class="op">|</span><span class="dt">Set</span>₁ a<span class="op">|</span> <span class="ot">=</span> <span class="op">|</span>a<span class="op">|</span></a>
+<a class="sourceLine" id="cb35-4" title="4"><span class="op">|</span><span class="dt">Set</span>₂ a<span class="op">|</span> <span class="ot">=</span> <span class="op">|</span>a<span class="op">|</span> (<span class="op">|</span>a<span class="op">|</span> <span class="op">-</span> <span class="dv">1</span>) <span class="op">/</span> <span class="dv">2</span></a></code></pre></div>
+<p>To derive the last formula, consider how many ways there are to choose the first element <code>x : a</code> of a set (<code>|a|</code>) and how many ways to choose the second element <code>y : a</code> (<code>|a| - 1</code>). Then notice that both <code>{ x, y }</code> and <code>{ y, x }</code> are the same set but we counted them twice.</p>
+<p>As an exercise see if you can prove that in general:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb36-1" title="1"><span class="op">|</span><span class="dt">Set</span>ₙ a<span class="op">|</span> <span class="ot">=</span> <span class="op">|</span>a<span class="op">|</span> (<span class="op">|</span>a<span class="op">|</span> <span class="op">-</span> <span class="dv">1</span>) <span class="op">..</span> (<span class="op">|</span>a<span class="op">|</span> <span class="op">-</span> n <span class="op">+</span> <span class="dv">1</span>) <span class="op">/</span> n<span class="op">!</span></a></code></pre></div>
+<p>What is <code>|Setₙ a|</code> for <code>n &gt; |a|</code>? It must be zero since there are not enough elements <code>x : a</code> to make such a set, a set must have all of its elements be unique.</p>
+<p>Now, imagine that we have some type <code>b ~ 1 + a</code>, which has exactly one more element than <code>a</code>. How are <code>|Set b|</code> and <code>|Set a|</code> related? Let’s say that <code>b = Maybe a</code>, and that we have some <code>x : |Set b|</code>. There are possible cases, either <code>Nothing ∈ x</code> or <code>Nothing ∉ x</code>. There are <code>|Set a|</code> ways to fill the rest of the set with elements <code>Just (z : a)</code>, which means that <code>|Set b| = 2 |Set a|</code>.</p>
+<p>We conclude that <code>|Set [1 + |a|]| = 2 |Set a|</code>, or in simplified notation <code>Set (1 + n) ~ 2 * Set n</code>, and from <code>|Set 0| = 1</code>, we can arrive at the final expression <code>|Set n| = 2^n</code>.</p>
+<p>But wait a second, <code>2^n ~ n -&gt; 2 ~ n -&gt; Bool</code>. Turns out that we spent all this time trying to derive the number of inhabitants of a set when we could’ve used a shortcut: a set is isomorphic to a predicate that tells us whether a particular value is in a set or not.</p>
+<h5 id="double-negation-translation">Double negation translation</h5>
+<p>I could write a whole another blog post about <a href="http://web.archive.org/web/20211021212648/https://en.wikipedia.org/wiki/Double-negation_translation">this topic</a>, but here is the gist: <code>x &gt; 0</code> if and only if <code>(x -&gt; 0) -&gt; 0 ~ 1</code> and <code>x ~ 0</code> if and only if <code>x -&gt; 0 &gt; 0</code>.</p>
+<p>We will first prove the latter:</p>
+<ul>
+<li>If <code>x ~ 0</code>, then <code>x -&gt; 0 ~ 0 -&gt; 0 ~ 1</code>.</li>
+<li>Suppose <code>x -&gt; 0 &gt; 0</code> but <code>x &gt; 0</code>, then there is some <code>f : x -&gt; 0</code> and some <code>a : x</code>. This means that <code>f a : 0</code> and <code>0 &gt; 0</code>, contradiction.</li>
+</ul>
+<p>Note that <code>x -&gt; 0</code> can not have more than one inhabitant. Suppose we could distinguish between two <code>a, b : x -&gt; 0</code> with a predicate <code>p : (x -&gt; 0) -&gt; Bool</code>, then <code>p</code> would need to somehow extract a bit of information out of <code>x -&gt; 0</code>, but the only way to probe <code>x -&gt; 0</code> is to supply it with an argument <code>x</code>. Above we have proved that if there is an argument that we could supply to <code>x -&gt; 0</code>, then <code>x -&gt; 0 ~ 0</code>, which contradicts <code>a : x -&gt; 0</code>.</p>
+<p>Since <code>x -&gt; 0</code> can have at most one inhabitant, we can conclude that:</p>
+<ul>
+<li>If <code>x ~ 0</code> iff <code>x -&gt; 0 ~ 1</code>.</li>
+<li>If <code>x &gt; 0</code> iff <code>x -&gt; 0 ~ 0</code>.</li>
+</ul>
+<p>Now we can prove that <code>x &gt; 0</code> iff <code>(x -&gt; 0) -&gt; 0 ~ 1</code>:</p>
+<ul>
+<li>If <code>x &gt; 0</code>, then <code>x -&gt; 0 ~ 0</code>, and <code>(x -&gt; 0) -&gt; 0 ~ 1</code>.</li>
+<li>If <code>(x -&gt; 0) -&gt; 0 ~ 1</code>, then <code>x -&gt; 0 ~ 0</code>, and <code>x &gt; 0</code>.</li>
+</ul>
+<p>As an exercise, prove that <code>(x -&gt; 0) -&gt; 0</code> is a covariant functor (exercise) and a monad. Prove that <code>x -&gt; 0</code> is a contravariant functor.</p>
+<h1 id="counting-inhabitants-of-rank-1-simple-kinded-types-1">Counting inhabitants of rank-1 simple-kinded types <a href="http://web.archive.org/web/20211021212648/https://www.reddit.com/r/haskell/comments/2bj7it/let_me_tell_you_about_the_types_of_data/">[1]</a></h1>
+<p>In this section we will finally get into polymorphic lambda calculus. Our universe of types expands to encompass types such as <code>forall a. a -&gt; a</code> and <code>forall b. (forall a. (a, b) -&gt; a) -&gt; a -&gt; b</code>.</p>
+<h5 id="distributivity-of-universal-quantification">Distributivity of universal quantification</h5>
+<p>Universal quantification <a href="http://web.archive.org/web/20211021212648/https://en.wikipedia.org/wiki/Distributive_property">distributes</a> over products:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb37-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> f x <span class="op">*</span> g x <span class="op">~</span> (<span class="ot">∀</span> x<span class="op">.</span> f x) <span class="op">*</span> (<span class="ot">∀</span> x<span class="op">.</span> g x)</a></code></pre></div>
+<p>This can be witnessed by (Idris code):</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb38-1" title="1">to <span class="op">:</span> {f <span class="op">:</span> <span class="dt">Type</span> <span class="ot">-&gt;</span> <span class="dt">Type</span>} <span class="ot">-&gt;</span> {g<span class="op">:</span> <span class="dt">Type</span> <span class="ot">-&gt;</span> <span class="dt">Type</span>} <span class="ot">-&gt;</span></a>
+<a class="sourceLine" id="cb38-2" title="2">  ((x <span class="op">:</span> <span class="dt">Type</span>) <span class="ot">-&gt;</span> (f x, g x)) <span class="ot">-&gt;</span> ((x <span class="op">:</span> <span class="dt">Type</span>) <span class="ot">-&gt;</span> f x, (x <span class="op">:</span> <span class="dt">Type</span>) <span class="ot">-&gt;</span> g x)</a>
+<a class="sourceLine" id="cb38-3" title="3">to fg <span class="ot">=</span> (\x <span class="ot">=&gt;</span> <span class="fu">fst</span> <span class="op">$</span> fg x, \x <span class="ot">=&gt;</span> <span class="fu">snd</span> <span class="op">$</span> fg x)</a>
+<a class="sourceLine" id="cb38-4" title="4"></a>
+<a class="sourceLine" id="cb38-5" title="5">from <span class="op">:</span> {f <span class="op">:</span> <span class="dt">Type</span> <span class="ot">-&gt;</span> <span class="dt">Type</span>} <span class="ot">-&gt;</span> {g<span class="op">:</span> <span class="dt">Type</span> <span class="ot">-&gt;</span> <span class="dt">Type</span>} <span class="ot">-&gt;</span></a>
+<a class="sourceLine" id="cb38-6" title="6">  ((x <span class="op">:</span> <span class="dt">Type</span>) <span class="ot">-&gt;</span> f x, (x <span class="op">:</span> <span class="dt">Type</span>) <span class="ot">-&gt;</span> g x) <span class="ot">-&gt;</span> ((x <span class="op">:</span> <span class="dt">Type</span>) <span class="ot">-&gt;</span> (f x, g x))</a>
+<a class="sourceLine" id="cb38-7" title="7">from (f, g) <span class="ot">=</span> \x <span class="ot">=&gt;</span> (f x, g x)</a></code></pre></div>
+<p>The corresponding distributivity law for coproducts,</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb39-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> f x <span class="op">+</span> g x <span class="op">~</span> (<span class="ot">∀</span> x<span class="op">.</span> f x) <span class="op">+</span> (<span class="ot">∀</span> x<span class="op">.</span> g x)</a></code></pre></div>
+<p>is not nearly as obvious, although it may appear trivial at first sight. Consider how you would derive <code>e : (∀ x. f x) + (∀ x. g x)</code>:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb40-1" title="1"><span class="ot">to ::</span> (<span class="ot">∀</span> x<span class="op">.</span> <span class="dt">Either</span> (f x) (g x)) <span class="ot">-&gt;</span> <span class="dt">Either</span> (<span class="ot">∀</span> x<span class="op">.</span> f x) (<span class="ot">∀</span> x<span class="op">.</span> g x)</a>
+<a class="sourceLine" id="cb40-2" title="2">to fg <span class="ot">=</span> <span class="op">...</span></a></code></pre></div>
+<p>The only way to construct an <code>Either</code> is to use its <code>Left</code> or <code>Right</code> constructor but which one? To determine that we first need to instantiate <code>∀ x. f x + g x</code> with some type:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb41-1" title="1">to fg <span class="ot">=</span> <span class="kw">case</span> (<span class="ot">fg ::</span> <span class="dt">Either</span> (f ()) (g ())) <span class="kw">of</span></a>
+<a class="sourceLine" id="cb41-2" title="2">  <span class="dt">Left</span>  f <span class="ot">-&gt;</span> <span class="dt">Left</span> <span class="op">$</span> <span class="op">...</span></a>
+<a class="sourceLine" id="cb41-3" title="3">  <span class="dt">Right</span> g <span class="ot">-&gt;</span> <span class="dt">Right</span> <span class="op">$</span> <span class="op">...</span></a></code></pre></div>
+<p>Consider the first case. We have a <code>f ()</code>, but we need to construct <code>∀ x. f x</code>… and evaluating <code>fg</code> with a different type parameter might give us a different result, couldn’t it?</p>
+<p>Well, this is where we have to rely on parametricity and purity of <code>fg</code>. If we didn’t have either one, this isomorphism would not hold!</p>
+<p>Parametricity implies that this isomorphism holds, but in Haskell (or Scala) there is no way to write its witness without using coercion or a partial <code>case</code> expression (<code>asInstanceOf</code> or partial <code>match</code>).</p>
+<h5 id="distributivity-of-over-functions">Distributivity of ∀ over functions</h5>
+<p>As we will see later, the interaction between <code>∀</code> and <code>⟶</code> is surprisingly rich, but there are some simple cases where <code>∀ x. f x -&gt; g x</code> can be simplified quite easily. If <code>f</code> is a constant type constructor, meaning that <code>f x</code> is always the same type <code>a</code>, then:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb42-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> a <span class="ot">-&gt;</span> f x</a>
+<a class="sourceLine" id="cb42-2" title="2"><span class="op">~</span> a <span class="ot">-&gt;</span> <span class="ot">∀</span> x<span class="op">.</span> f x</a></code></pre></div>
+<p>which can be witnessed by</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode scala"><code class="sourceCode scala"><a class="sourceLine" id="cb43-1" title="1"><span class="kw">def</span> to[A, F[_]]: ∀[λ[x =&gt; A =&gt; F[x]]] =&gt; (A =&gt; ∀[F]) =</a>
+<a class="sourceLine" id="cb43-2" title="2">  f =&gt; a =&gt; ∀(f.<span class="fu">apply</span>.<span class="fu">apply</span>(a))</a>
+<a class="sourceLine" id="cb43-3" title="3"></a>
+<a class="sourceLine" id="cb43-4" title="4"><span class="kw">def</span> from[A, F[_]]: (A =&gt; ∀[F]) =&gt; ∀[λ[x =&gt; A =&gt; F[x]]] =</a>
+<a class="sourceLine" id="cb43-5" title="5">  f =&gt; ∀[λ[x =&gt; A =&gt; F[x]]](a =&gt; <span class="fu">f</span>(a).<span class="fu">apply</span>)</a></code></pre></div>
+<p>You might want to check out Wikipedia’s page on <a href="http://web.archive.org/web/20211021212648/https://en.wikipedia.org/wiki/Universal_quantification#Properties">universal quantification</a> to learn other similar isomorphisms.</p>
+<h5 id="yoneda-lemma">Yoneda lemma</h5>
+<p>If <code>f</code> is a covariant functor,</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb44-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> (a <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> f x <span class="op">~</span> f a</a></code></pre></div>
+<p>In order to show that there is indeed an isomorphism, we first construct two functions going between these types:</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb45-1" title="1"><span class="ot">to ::</span> (<span class="ot">∀</span> x<span class="op">.</span> (a <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> f x) <span class="ot">-&gt;</span> f a</a>
+<a class="sourceLine" id="cb45-2" title="2">to f <span class="ot">=</span> f <span class="fu">id</span></a>
+<a class="sourceLine" id="cb45-3" title="3"></a>
+<a class="sourceLine" id="cb45-4" title="4"><span class="ot">from ::</span> <span class="dt">Functor</span> f <span class="ot">=&gt;</span> f a <span class="ot">-&gt;</span> (<span class="ot">∀</span> x<span class="op">.</span> (a <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> f x)</a>
+<a class="sourceLine" id="cb45-5" title="5">from fa <span class="ot">=</span> \f <span class="ot">-&gt;</span> <span class="fu">fmap</span> f fa</a></code></pre></div>
+<p>As an exercise I would recommend proving that <code>to . from = id</code> and <code>from . to = id</code>. One direction will prove very easy, the other will seem impossible. AFAIU the proof <em>must</em> rely on parametricity, so the equality would hold in relational model of polymorphic lambda calculus. I suggest going all the way back to Reynolds’ papers on polymorphic lambda calculus for information.</p>
+<h5 id="yoneda-lemma-for-contravariant-functors">Yoneda lemma for contravariant functors</h5>
+<p>If <code>f</code> is a contravariant functor,</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb46-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> (x <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> f x <span class="op">~</span> f a</a></code></pre></div>
+<h5 id="corollary">Corollary</h5>
+<p>If <code>f</code> is a covariant functor,</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb47-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> f x</a>
+<a class="sourceLine" id="cb47-2" title="2"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> f x</a>
+<a class="sourceLine" id="cb47-3" title="3"><span class="op">~</span> f <span class="dv">0</span></a></code></pre></div>
+<p>If <code>f</code> is a contravariant functor,</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb48-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> f x</a>
+<a class="sourceLine" id="cb48-2" title="2"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> (x <span class="ot">-&gt;</span> <span class="dv">1</span>) <span class="ot">-&gt;</span> f x</a>
+<a class="sourceLine" id="cb48-3" title="3"><span class="op">~</span> f <span class="dv">1</span></a></code></pre></div>
+<p>If <code>f</code> is a phantom functor (<code>x</code> is free in <code>f x</code>),</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb49-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> f x</a>
+<a class="sourceLine" id="cb49-2" title="2"><span class="co">-- since a phantom functor is covariant</span></a>
+<a class="sourceLine" id="cb49-3" title="3"><span class="op">~</span> f <span class="dv">0</span></a>
+<a class="sourceLine" id="cb49-4" title="4"><span class="co">-- since a phantom functor is contravariant</span></a>
+<a class="sourceLine" id="cb49-5" title="5"><span class="op">~</span> f <span class="dv">1</span></a></code></pre></div>
+<h5 id="simple-examples">Simple examples</h5>
+<div class="sourceCode" id="cb50"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb50-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb50-2" title="2"><span class="co">-- a ~ 1 -&gt; a</span></a>
+<a class="sourceLine" id="cb50-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb50-4" title="4"><span class="co">-- Yoneda with f x = x</span></a>
+<a class="sourceLine" id="cb50-5" title="5"><span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb51-1" title="1"><span class="ot">∀</span> a b<span class="op">.</span> (a, b) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb51-2" title="2"><span class="co">-- uncurrying</span></a>
+<a class="sourceLine" id="cb51-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> b <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb51-4" title="4"><span class="co">-- 1 -&gt; b ~ b</span></a>
+<a class="sourceLine" id="cb51-5" title="5"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb51-6" title="6"><span class="co">-- Yoneda with f x = a -&gt; a</span></a>
+<a class="sourceLine" id="cb51-7" title="7"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb51-8" title="8"><span class="co">-- reusing the above proof</span></a>
+<a class="sourceLine" id="cb51-9" title="9"><span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb52-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a, a) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb52-2" title="2"><span class="co">-- (a, a) ~ 2 -&gt; a</span></a>
+<a class="sourceLine" id="cb52-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">2</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb52-4" title="4"><span class="co">-- Yoneda with f x = a -&gt; a</span></a>
+<a class="sourceLine" id="cb52-5" title="5"><span class="op">~</span> <span class="dv">2</span></a></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb53-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a, a) <span class="ot">-&gt;</span> (a, a)</a>
+<a class="sourceLine" id="cb53-2" title="2"><span class="co">-- (a, a) ~ 2 -&gt; a</span></a>
+<a class="sourceLine" id="cb53-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">2</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> (a, a)</a>
+<a class="sourceLine" id="cb53-4" title="4"><span class="co">-- Yoneda with f x = (x, x)</span></a>
+<a class="sourceLine" id="cb53-5" title="5"><span class="op">~</span> (<span class="dv">2</span>, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb53-6" title="6"><span class="op">~</span> <span class="dv">4</span></a></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb54-1" title="1"><span class="ot">∀</span> a b c<span class="op">.</span> (a <span class="ot">-&gt;</span> c) <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> c</a>
+<a class="sourceLine" id="cb54-2" title="2"><span class="co">-- Yoneda with f x = b -&gt; a -&gt; x</span></a>
+<a class="sourceLine" id="cb54-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> b <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb54-4" title="4"><span class="co">-- reusing one of the above theorems</span></a>
+<a class="sourceLine" id="cb54-5" title="5"><span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb55-1" title="1"><span class="ot">∀</span> a b c<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> (b <span class="ot">-&gt;</span> c) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> c</a>
+<a class="sourceLine" id="cb55-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> <span class="ot">∀</span> c<span class="op">.</span> (b <span class="ot">-&gt;</span> c) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> c</a>
+<a class="sourceLine" id="cb55-3" title="3"><span class="co">-- Yoneda with f x = a -&gt; x</span></a>
+<a class="sourceLine" id="cb55-4" title="4"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> b</a>
+<a class="sourceLine" id="cb55-5" title="5"><span class="co">-- Yoneda with f x = a -&gt; x</span></a>
+<a class="sourceLine" id="cb55-6" title="6"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb55-7" title="7"><span class="co">-- reusing one of the above theorems</span></a>
+<a class="sourceLine" id="cb55-8" title="8"><span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb56-1" title="1"><span class="ot">∀</span> a b<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> b</a>
+<a class="sourceLine" id="cb56-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> ((a <span class="op">+</span> <span class="dv">1</span>) <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> b</a>
+<a class="sourceLine" id="cb56-3" title="3"><span class="co">-- Yoneda with f x = a -&gt; x</span></a>
+<a class="sourceLine" id="cb56-4" title="4"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> (a <span class="op">+</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb56-5" title="5"><span class="co">-- a ~ 1 -&gt; a</span></a>
+<a class="sourceLine" id="cb56-6" title="6"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> (a <span class="op">+</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb56-7" title="7"><span class="co">-- Yoneda with f x = x + 1</span></a>
+<a class="sourceLine" id="cb56-8" title="8"><span class="op">~</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb56-9" title="9"><span class="op">~</span> <span class="dv">2</span></a></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb57-1" title="1"><span class="ot">∀</span> a b c<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> c</a>
+<a class="sourceLine" id="cb57-2" title="2"><span class="co">-- (0 -&gt; c) -&gt; x ~ x</span></a>
+<a class="sourceLine" id="cb57-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a b c<span class="op">.</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> c) <span class="ot">-&gt;</span> ((a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> c)</a>
+<a class="sourceLine" id="cb57-4" title="4"><span class="co">-- Yoneda with f x = (a -&gt; b) -&gt; b -&gt; a -&gt; x</span></a>
+<a class="sourceLine" id="cb57-5" title="5"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb57-6" title="6"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="ot">∀</span> b<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb57-7" title="7"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb57-8" title="8"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">2</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb57-9" title="9"><span class="co">-- to prove that ∀ a. f a -&gt; 0 is uninhabited</span></a>
+<a class="sourceLine" id="cb57-10" title="10"><span class="co">-- we need to prove that f a is inhabited for at least one a</span></a>
+<a class="sourceLine" id="cb57-11" title="11"><span class="co">-- substitute a = 1, we get</span></a>
+<a class="sourceLine" id="cb57-12" title="12"><span class="co">-- (2 -&gt; 1) ~ 1</span></a>
+<a class="sourceLine" id="cb57-13" title="13"><span class="co">-- hence</span></a>
+<a class="sourceLine" id="cb57-14" title="14"><span class="op">~</span> <span class="dv">0</span></a></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb58-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb58-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb58-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb58-4" title="4"><span class="co">-- Yoneda with f x = 0</span></a>
+<a class="sourceLine" id="cb58-5" title="5"><span class="op">~</span> <span class="dv">0</span></a></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb59-1" title="1"><span class="ot">∀</span> a b<span class="op">.</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>, b) <span class="ot">-&gt;</span> <span class="dv">2</span> <span class="op">*</span> b</a>
+<a class="sourceLine" id="cb59-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> b <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">2</span> <span class="op">*</span> b</a>
+<a class="sourceLine" id="cb59-3" title="3"><span class="co">-- Yoneda</span></a>
+<a class="sourceLine" id="cb59-4" title="4"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb59-5" title="5"><span class="co">-- Add (0 -&gt; a) ~ 1</span></a>
+<a class="sourceLine" id="cb59-6" title="6"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb59-7" title="7"><span class="co">-- Yoneda</span></a>
+<a class="sourceLine" id="cb59-8" title="8"><span class="op">~</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb59-9" title="9"><span class="op">~</span> <span class="dv">1</span> <span class="ot">-&gt;</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb59-10" title="10"><span class="op">~</span> <span class="dv">2</span></a></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb60-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb60-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb60-3" title="3"><span class="op">~</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb60-4" title="4"><span class="op">~</span> <span class="dv">1</span> <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb60-5" title="5"><span class="op">~</span> <span class="dv">0</span></a></code></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb61-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb61-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb61-3" title="3"><span class="op">~</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb61-4" title="4"><span class="op">~</span> <span class="dv">0</span> <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb61-5" title="5"><span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb62-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>, a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb62-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> <span class="dv">2</span> <span class="op">*</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb62-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> <span class="dv">2</span> <span class="op">*</span> (a <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb62-4" title="4"><span class="op">~</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb62-5" title="5"><span class="op">~</span> <span class="dv">2</span> <span class="op">*</span> <span class="dv">0</span> <span class="ot">-&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb62-6" title="6"><span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb63-1" title="1"><span class="ot">∀</span> a b<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a <span class="ot">-&gt;</span> <span class="dt">Maybe</span> b</a>
+<a class="sourceLine" id="cb63-2" title="2"><span class="co">-- Yoneda with f x = Maybe a -&gt; Maybe x</span></a>
+<a class="sourceLine" id="cb63-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> <span class="dt">Maybe</span> a <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a</a>
+<a class="sourceLine" id="cb63-4" title="4"><span class="co">-- Maybe's definition</span></a>
+<a class="sourceLine" id="cb63-5" title="5"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">1</span> <span class="op">+</span> a) <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a</a>
+<a class="sourceLine" id="cb63-6" title="6"><span class="co">-- Distributing `-&gt;` over `+`</span></a>
+<a class="sourceLine" id="cb63-7" title="7"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a) <span class="op">*</span> (a <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a)</a>
+<a class="sourceLine" id="cb63-8" title="8"><span class="co">-- Distributing `∀` over `*`</span></a>
+<a class="sourceLine" id="cb63-9" title="9"><span class="op">~</span> (<span class="ot">∀</span> a<span class="op">.</span> <span class="dt">Maybe</span> a) <span class="op">*</span> (<span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a)</a>
+<a class="sourceLine" id="cb63-10" title="10"><span class="co">-- Maybe's definition</span></a>
+<a class="sourceLine" id="cb63-11" title="11"><span class="op">~</span> (<span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">1</span> <span class="op">+</span> a)) <span class="op">*</span> (<span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a)</a>
+<a class="sourceLine" id="cb63-12" title="12"><span class="co">-- 0 -&gt; a introduction (as a unit)</span></a>
+<a class="sourceLine" id="cb63-13" title="13"><span class="op">~</span> (<span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> (<span class="dv">1</span> <span class="op">+</span> a)) <span class="op">*</span> (<span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a)</a>
+<a class="sourceLine" id="cb63-14" title="14"><span class="co">-- Yoneda lemma with f x = 1 + x</span></a>
+<a class="sourceLine" id="cb63-15" title="15"><span class="op">~</span> (<span class="dv">1</span> <span class="op">+</span> <span class="dv">0</span>) <span class="op">*</span> (<span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a)</a>
+<a class="sourceLine" id="cb63-16" title="16"><span class="co">-- Simplifying via x + 0 = x and 1 * x = x</span></a>
+<a class="sourceLine" id="cb63-17" title="17"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> <span class="dt">Maybe</span> a</a>
+<a class="sourceLine" id="cb63-18" title="18"><span class="co">-- unit introduction and Maybe's definition</span></a>
+<a class="sourceLine" id="cb63-19" title="19"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> (<span class="dv">1</span> <span class="op">+</span> a)</a>
+<a class="sourceLine" id="cb63-20" title="20"><span class="co">-- Yoneda lemma with f x = 1 + x</span></a>
+<a class="sourceLine" id="cb63-21" title="21"><span class="op">~</span> <span class="dv">2</span></a></code></pre></div>
+<h1 id="representable-functors-and-containers">Representable functors and containers</h1>
+<p>Yoneda lemma tells us that <code>∀ x. (a -&gt; x) -&gt; g x ~ g a</code>, but what if instead of <code>a -&gt; x</code> we have some arbitrary <code>f x</code>, and a natural transformation between functors <code>∀ x. f x -&gt; g x</code>.</p>
+<p>There is a class of functors <code>f x</code> that are isomorphic to <code>a -&gt; x</code> for some <code>a</code>, called <a href="http://web.archive.org/web/20211021212648/https://en.wikipedia.org/wiki/Representable_functor">representable functors</a>. Some examples include:</p>
+<pre><code>()        ~ 0 -&gt; x
+x         ~ 1 -&gt; x
+(x, x, x) ~ 3 -&gt; x
+-- basically, anything that looks like a tuple</code></pre>
+<p>If <code>f</code> is a representable functor, <code>f x ~ a -&gt; x</code>, and <code>g</code> is a covariant functor, then</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb65-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> f x <span class="ot">-&gt;</span> g x</a>
+<a class="sourceLine" id="cb65-2" title="2"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> (a <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> g x</a>
+<a class="sourceLine" id="cb65-3" title="3"><span class="op">~</span> g a</a></code></pre></div>
+<p>That’s a nice shortcut, but it is pretty limiting! What if <code>f = Maybe</code>, or say, more generally, <code>f x ~ f₁ x + f₂ x</code>, where <code>f₁ x ~ a₁ -&gt; x</code> and <code>f₂ x ~ a₂ -&gt; x</code> (in the case of <code>Maybe</code>, <code>a₁ ~ 0</code> and <code>a₂ ~ 1</code>):</p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb66-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> f x <span class="ot">-&gt;</span> g x</a>
+<a class="sourceLine" id="cb66-2" title="2"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> (f₁ x <span class="op">+</span> f₂ x) <span class="ot">-&gt;</span> g x</a>
+<a class="sourceLine" id="cb66-3" title="3"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> ((a₁ <span class="ot">-&gt;</span> x) <span class="op">+</span> (a₂ <span class="ot">-&gt;</span> x)) <span class="ot">-&gt;</span> g x</a>
+<a class="sourceLine" id="cb66-4" title="4"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> ((a₁ <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> g x) <span class="op">*</span> ((a₂ <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> g x)</a>
+<a class="sourceLine" id="cb66-5" title="5"><span class="op">~</span> (<span class="ot">∀</span> x<span class="op">.</span> (a₁ <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> g x) <span class="op">*</span> (<span class="ot">∀</span> x<span class="op">.</span> (a₂ <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> g x)</a>
+<a class="sourceLine" id="cb66-6" title="6"><span class="op">~</span> (g a₁) <span class="op">*</span> (g a₂)</a></code></pre></div>
+<p>In the case of <code>∀ x. Maybe x -&gt; Maybe x</code>, we get:</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb67-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> <span class="dt">Maybe</span> x <span class="ot">-&gt;</span> <span class="dt">Maybe</span> x</a>
+<a class="sourceLine" id="cb67-2" title="2"><span class="op">~</span> <span class="dt">Maybe</span> <span class="dv">0</span> <span class="op">*</span> <span class="dt">Maybe</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb67-3" title="3"><span class="op">~</span> <span class="dv">1</span> <span class="op">*</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb67-4" title="4"><span class="op">~</span> <span class="dv">2</span></a></code></pre></div>
+<p>Much simpler than what we had to do before!</p>
+<p>Now, there is another class of functors called containers, where <code>f x ~ Σᵢ aᵢ -&gt; x</code>, and <code>i</code> can range either over some finite range or over <code>ℕ</code>.</p>
+<p>Almost every “container-like” type (a type with a functor instance) you can imagine is a container:</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb68-1" title="1"><span class="dt">Maybe</span> x   <span class="op">~</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> x) <span class="op">+</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> x)</a>
+<a class="sourceLine" id="cb68-2" title="2"></a>
+<a class="sourceLine" id="cb68-3" title="3">(<span class="dt">Bool</span>, x)</a>
+<a class="sourceLine" id="cb68-4" title="4"><span class="op">~</span> <span class="dv">2</span> <span class="op">*</span> x</a>
+<a class="sourceLine" id="cb68-5" title="5"><span class="op">~</span> (<span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> x)</a>
+<a class="sourceLine" id="cb68-6" title="6"><span class="op">~</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> x) <span class="op">+</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> ax)</a>
+<a class="sourceLine" id="cb68-7" title="7"></a>
+<a class="sourceLine" id="cb68-8" title="8"><span class="dt">Bool</span> <span class="co">-- f x = Bool</span></a>
+<a class="sourceLine" id="cb68-9" title="9"><span class="op">~</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> x)</a>
+<a class="sourceLine" id="cb68-10" title="10"><span class="op">~</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> x) <span class="op">+</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> x)</a>
+<a class="sourceLine" id="cb68-11" title="11"></a>
+<a class="sourceLine" id="cb68-12" title="12"><span class="dt">List</span> x</a>
+<a class="sourceLine" id="cb68-13" title="13"><span class="op">~</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> x) <span class="op">+</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> x) <span class="op">+</span> (<span class="dv">2</span> <span class="ot">-&gt;</span> x) <span class="op">+</span> <span class="op">...</span></a>
+<a class="sourceLine" id="cb68-14" title="14"><span class="op">~</span> Σᵢ xⁱ</a>
+<a class="sourceLine" id="cb68-15" title="15"></a>
+<a class="sourceLine" id="cb68-16" title="16"><span class="dt">Either</span> <span class="dt">Bool</span> x</a>
+<a class="sourceLine" id="cb68-17" title="17"><span class="op">~</span> (<span class="dv">2</span> <span class="op">+</span> x)</a>
+<a class="sourceLine" id="cb68-18" title="18"><span class="op">~</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> x) <span class="op">+</span> (<span class="dv">0</span> <span class="ot">-&gt;</span> x) <span class="op">+</span> (<span class="dv">1</span> <span class="ot">-&gt;</span> x)</a></code></pre></div>
+<p>The only exception that I know of is <code>(x -&gt; 0) -&gt; 0</code> and similar constructions.</p>
+<p>Now we can generalize our previous result to an arbitrary container:</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb69-1" title="1"><span class="ot">∀</span> x<span class="op">.</span> f x <span class="ot">-&gt;</span> g x</a>
+<a class="sourceLine" id="cb69-2" title="2"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> (Σᵢ fᵢ x) <span class="ot">-&gt;</span> g x</a>
+<a class="sourceLine" id="cb69-3" title="3"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> (Σᵢ aᵢ <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> g x</a>
+<a class="sourceLine" id="cb69-4" title="4"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> �&nbsp;ᵢ ((aᵢ <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> g x)</a>
+<a class="sourceLine" id="cb69-5" title="5"><span class="op">~</span> �&nbsp;ᵢ (<span class="ot">∀</span> x<span class="op">.</span> (aᵢ <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> g x)</a>
+<a class="sourceLine" id="cb69-6" title="6"><span class="op">~</span> �&nbsp;ᵢ g aᵢ</a></code></pre></div>
+<h5 id="a-different-view-on-free-theorems">A different view on free theorems</h5>
+<p>Consider some function <code>f</code> that has the same signature as <code>map</code> on lists:</p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb70-1" title="1"><span class="ot">∀</span> a b<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> [a] <span class="ot">-&gt;</span> [b]</a>
+<a class="sourceLine" id="cb70-2" title="2"><span class="co">-- Yoneda with f x = [a] -&gt; [x]</span></a>
+<a class="sourceLine" id="cb70-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> [a] <span class="ot">-&gt;</span> [a]</a>
+<a class="sourceLine" id="cb70-4" title="4"><span class="co">-- using the container formula</span></a>
+<a class="sourceLine" id="cb70-5" title="5"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (Σᵢ aⁱ) <span class="ot">-&gt;</span> [a]</a>
+<a class="sourceLine" id="cb70-6" title="6"><span class="op">~</span> �&nbsp;ᵢ [i]</a>
+<a class="sourceLine" id="cb70-7" title="7"><span class="co">-- expressing it using dependent types and renaming i to n</span></a>
+<a class="sourceLine" id="cb70-8" title="8"><span class="op">~</span> (n <span class="op">:</span> <span class="dt">Nat</span>) <span class="ot">-&gt;</span> [<span class="dt">Fin</span> n]</a></code></pre></div>
+<p>We can see that a function with <code>map</code>’s signature is isomorphic to a function that takes the list’s length <code>n : Nat</code> and then produces a list of indices of elements from the original list. It may duplicate some indices and skip some, but that’s about it! Compare that with <a href="http://web.archive.org/web/20211021212648/http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.38.9875">the free theorem</a> for <code>m : ∀ a b. (a -&gt; b) -&gt; [a] -&gt; [b]</code>:</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb71-1" title="1">m f <span class="ot">=</span> m <span class="fu">id</span> <span class="op">.</span> <span class="fu">map</span> f <span class="ot">=</span> <span class="fu">map</span> f <span class="op">.</span> m <span class="fu">id</span></a></code></pre></div>
+<p>I don’t know about you, but I find the free theorem to be less intuitive than our approach of finding a neat isomorphism.</p>
+<p>Similarly if take a look at <code>filter</code>’s signature,</p>
+<div class="sourceCode" id="cb72"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb72-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> [a] <span class="ot">-&gt;</span> [a]</a>
+<a class="sourceLine" id="cb72-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> [a] <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> [a]</a>
+<a class="sourceLine" id="cb72-3" title="3"><span class="co">-- using the container formula</span></a>
+<a class="sourceLine" id="cb72-4" title="4"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (Σᵢ aⁱ) <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> [a]</a>
+<a class="sourceLine" id="cb72-5" title="5"><span class="op">~</span> �&nbsp;ᵢ (i <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> [i]</a>
+<a class="sourceLine" id="cb72-6" title="6"><span class="co">-- expressing it using dependent types and renaming i to n</span></a>
+<a class="sourceLine" id="cb72-7" title="7"><span class="op">~</span> (n <span class="op">:</span> <span class="dt">Nat</span>) <span class="ot">-&gt;</span> <span class="dt">Set</span> (<span class="dt">Fin</span> n) <span class="ot">-&gt;</span> [<span class="dt">Fin</span> n]</a></code></pre></div>
+<p>It takes the list’s length and a set of indices and produces a list of indices. We can see exactly how much freedom the signature leaves us! For example, a function that takes every element that comes <em>after</em> one that satisfies the predicate and then shuffles them somehow based on the length of the list is a valid function satisfying the signature <code>∀ a. (a -&gt; Bool) -&gt; [a] -&gt; [a]</code>.</p>
+<h1 id="recursive-types">Recursive types</h1>
+<p>But what to do about <code>∀ a. (a -&gt; a) -&gt; (a -&gt; a)</code>? Intuitively, we know that the answer is <code>ℵ₀</code> (a countable number of inhabitants) as <code>\f -&gt; f</code>, <code>\f -&gt; f . f</code>, <code>\f -&gt; f . f . f</code>, etc are all valid expressions with that type. Can we make this proof more rigorous and less syntax-dependent?</p>
+<p>Well, time for big guns,</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb73-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb73-2" title="2"><span class="co">-- (a -&gt; a, a) ~ (1 + a) -&gt; a</span></a>
+<a class="sourceLine" id="cb73-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> ((<span class="dv">1</span> <span class="op">+</span> a) <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb73-4" title="4"><span class="co">-- define f x = 1 + x</span></a>
+<a class="sourceLine" id="cb73-5" title="5"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (f a <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb73-6" title="6"><span class="op">~</span> μ x<span class="op">.</span> f x</a>
+<a class="sourceLine" id="cb73-7" title="7"><span class="op">~</span> μ x<span class="op">.</span> <span class="dv">1</span> <span class="op">+</span> x</a>
+<a class="sourceLine" id="cb73-8" title="8"><span class="op">~</span> ℵ₀</a></code></pre></div>
+<p>From this we can conclude that the number of inhabitants of <code>∀ a. (a -&gt; a) -&gt; a -&gt; a</code> is countable, and it is isomorphic to the set of Peano (natural) numbers.</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb74-1" title="1"><span class="ot">∀</span> a b<span class="op">.</span> (a <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb74-2" title="2"><span class="co">-- move parameters around</span></a>
+<a class="sourceLine" id="cb74-3" title="3"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> b <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> b <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb74-4" title="4"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> b <span class="ot">-&gt;</span> ((a <span class="op">*</span> b <span class="op">+</span> <span class="dv">1</span>) <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb74-5" title="5"><span class="op">~</span> <span class="ot">∀</span> b<span class="op">.</span> b <span class="ot">-&gt;</span> (μ x<span class="op">.</span> x <span class="op">*</span> b <span class="op">+</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb74-6" title="6"><span class="co">-- Yoneda</span></a>
+<a class="sourceLine" id="cb74-7" title="7"><span class="op">~</span> μ x<span class="op">.</span> x <span class="op">*</span> () <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb74-8" title="8"><span class="op">~</span> ℵ₀</a></code></pre></div>
+<div class="sourceCode" id="cb75"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb75-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a <span class="ot">-&gt;</span> a) <span class="ot">-&gt;</span> a</a>
+<a class="sourceLine" id="cb75-2" title="2"><span class="co">-- f x = x</span></a>
+<a class="sourceLine" id="cb75-3" title="3"><span class="op">~</span> μ x<span class="op">.</span> x</a>
+<a class="sourceLine" id="cb75-4" title="4"><span class="op">~</span> <span class="dv">0</span></a></code></pre></div>
+<h5 id="checking-that-μ-x.-f-x-is-inhabited">Checking that <code>μ x. f x</code> is inhabited</h5>
+<p>Is there a mechanical way to check if <code>μ x. f x</code> is inhabited? Note that if <code>μ x. f x</code> is inhabited, <code>μ x. f x &gt; 0</code>, then</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb76-1" title="1">μ x<span class="op">.</span> f x</a>
+<a class="sourceLine" id="cb76-2" title="2"><span class="op">~</span> <span class="ot">∀</span> x<span class="op">.</span> (f x <span class="ot">-&gt;</span> x) <span class="ot">-&gt;</span> x <span class="op">&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb76-3" title="3"><span class="co">-- substituting x = 0</span></a>
+<a class="sourceLine" id="cb76-4" title="4">(f <span class="dv">0</span> <span class="ot">-&gt;</span> <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span> <span class="op">&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb76-5" title="5"><span class="co">-- double-negation translation preserves `&gt; 0`</span></a>
+<a class="sourceLine" id="cb76-6" title="6">f <span class="dv">0</span> <span class="op">&gt;</span> <span class="dv">0</span></a></code></pre></div>
+<p>and we conclude that <code>μ x. f x &gt; 0</code> implies <code>f 0 &gt; 0</code> (proof by <a href="http://web.archive.org/web/20211021212648/http://mniip.com/">mniip</a>).</p>
+<p>On the other hand,</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb77-1" title="1">f <span class="dv">0</span> <span class="op">&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb77-2" title="2"><span class="co">-- assuming f is a covariant functor,</span></a>
+<a class="sourceLine" id="cb77-3" title="3"><span class="co">-- we can map it with 0 -&gt; (μ x. f x)</span></a>
+<a class="sourceLine" id="cb77-4" title="4">f (μ x<span class="op">.</span> f x) <span class="op">&gt;</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb77-5" title="5"><span class="co">-- and we conclude</span></a>
+<a class="sourceLine" id="cb77-6" title="6">μ x<span class="op">.</span> f x <span class="op">&gt;</span> <span class="dv">0</span></a></code></pre></div>
+<p>Hence, <code>μ x. f x</code> is inhabited if and only if <code>f 0</code> is inhabited and <code>f</code> is a covariant functor.</p>
+<h5 id="checking-that-μ-x.-f-x-has-infinite-inhabitants">Checking that <code>μ x. f x</code> has infinite inhabitants</h5>
+<p>If <code>f 0 ~ ℵ₀</code>, then following the same logic as in our proof of inhabitance, we get:</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb78-1" title="1">f <span class="dv">0</span> <span class="op">~</span> ℵ₀</a>
+<a class="sourceLine" id="cb78-2" title="2"><span class="co">-- assuming f is a covariant functor,</span></a>
+<a class="sourceLine" id="cb78-3" title="3"><span class="co">-- we can map it with 0 -&gt; (μ x. f x)</span></a>
+<a class="sourceLine" id="cb78-4" title="4">f (μ x<span class="op">.</span> f x) <span class="op">~</span> ℵ₀</a>
+<a class="sourceLine" id="cb78-5" title="5"><span class="co">-- and we conclude</span></a>
+<a class="sourceLine" id="cb78-6" title="6">μ x<span class="op">.</span> f x <span class="op">~</span> ℵ₀</a></code></pre></div>
+<p>But what if <code>0 &lt; f 0 &lt; ℵ₀</code>? Let’s assume that <code>f</code> is a container, <code>f x ~ (Σᵢ aᵢ -&gt; x) + r</code>, where <code>aᵢ &gt; 0</code>, <code>r &gt; 0</code>, and <code>i</code> ranges over a non-empty set <code>I</code>. Then <code>f x ~ 1 + (a₀ -&gt; x) + ((r - 1) + Σᵢ aᵢ -&gt; x)</code>, where <code>Σᵢ</code> now ranges over <code>I ∖ {0}</code>.</p>
+<p>In other words, <code>f x ~ 1 + (a₀ -&gt; x) + R</code>. As an exercise see how you would construct an infinite sequence of elements of <code>μ x. 1 + (a₀ -&gt; x) + R</code>, proving that <code>μ x. f x ~ ℵ₀</code>.</p>
+<h2 id="what-is-not-free-about-functor-laws">What is not free about Functor laws?</h2>
+<p>Suppose that <code>F :: * -&gt; *</code> is a functor, we write some implementation of <code>fmap :: forall a b. (a -&gt; b) -&gt; F a -&gt; F b</code> for it, what should we look out for?</p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb79-1" title="1"><span class="ot">∀</span> a b<span class="op">.</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> <span class="dt">F</span> a <span class="ot">-&gt;</span> <span class="dt">F</span> b</a>
+<a class="sourceLine" id="cb79-2" title="2"><span class="co">-- f b = F a -&gt; F b</span></a>
+<a class="sourceLine" id="cb79-3" title="3"><span class="co">-- if F is a functor,</span></a>
+<a class="sourceLine" id="cb79-4" title="4"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> <span class="dt">F</span> a <span class="ot">-&gt;</span> <span class="dt">F</span> a</a>
+<a class="sourceLine" id="cb79-5" title="5"><span class="op">~</span> <span class="dt">F</span> <span class="op">:~&gt;</span> <span class="dt">F</span></a></code></pre></div>
+<p>So <code>fmap ~ F :~&gt; F</code>, meaning that the only freedom in implementing <code>fmap</code> that we have is modifying the context (<code>F</code>) without modifying the contents (<code>a</code>) of <code>F a</code>. This explains why <code>fmap id = id</code> is crucially important, if this law were to be omitted, we could write an <code>fmap</code> that combines a natural transformation of <code>F :~&gt; F</code> with lifting of <code>a -&gt; b</code> to <code>F a -&gt; F b</code>.</p>
+<h2 id="another-way-to-derive-theorems-for-free">Another way to derive theorems for free?</h2>
+<div class="sourceCode" id="cb80"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb80-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> <span class="dt">F</span> a <span class="ot">-&gt;</span> <span class="dt">F</span> a</a>
+<a class="sourceLine" id="cb80-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a<span class="op">.</span> (<span class="dt">F</span> a, a <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> <span class="dt">F</span> a</a>
+<a class="sourceLine" id="cb80-3" title="3"><span class="co">-- G x = (F x, x -&gt; Bool)</span></a>
+<a class="sourceLine" id="cb80-4" title="4"><span class="op">~</span> <span class="dt">G</span> <span class="op">:~&gt;</span> <span class="dt">F</span></a>
+<a class="sourceLine" id="cb80-5" title="5"><span class="co">-- C a b = (a -&gt; b, b -&gt; a)</span></a>
+<a class="sourceLine" id="cb80-6" title="6"><span class="co">-- D a b = a -&gt; b</span></a>
+<a class="sourceLine" id="cb80-7" title="7"><span class="co">-- α . (G f) = (F f) . α</span></a></code></pre></div>
+<p>This section is still WIP, but here is something to think about: can every free theorem be expressed as a sufficient condition for some <code>F :~&gt; G</code> to be a natural transformation?</p>
+<h1 id="counting-inhabitants-for-rank-n-and-higher-kinded-types.">Counting inhabitants for rank-N and higher-kinded types.</h1>
+<div class="sourceCode" id="cb81"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb81-1" title="1"><span class="ot">∀</span> f<span class="op">.</span> f <span class="dt">A</span> <span class="ot">-&gt;</span> f <span class="dt">B</span></a>
+<a class="sourceLine" id="cb81-2" title="2"><span class="co">-- define g x = (x = A)</span></a>
+<a class="sourceLine" id="cb81-3" title="3"><span class="co">-- f A ~ g :~&gt; f</span></a>
+<a class="sourceLine" id="cb81-4" title="4"><span class="op">~</span> <span class="ot">∀</span> f<span class="op">.</span> (g <span class="op">:~&gt;</span> f) <span class="ot">-&gt;</span> f <span class="dt">B</span></a>
+<a class="sourceLine" id="cb81-5" title="5"><span class="co">-- Yoneda</span></a>
+<a class="sourceLine" id="cb81-6" title="6"><span class="op">~</span> g <span class="dt">B</span></a>
+<a class="sourceLine" id="cb81-7" title="7"><span class="op">~</span> <span class="dt">A</span> <span class="ot">=</span> <span class="dt">B</span></a></code></pre></div>
+<div class="sourceCode" id="cb82"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb82-1" title="1"><span class="ot">∀</span> f a b<span class="op">.</span> f (<span class="dt">G</span> a) <span class="ot">-&gt;</span> f (<span class="dt">G</span> b)</a>
+<a class="sourceLine" id="cb82-2" title="2"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> <span class="ot">∀</span> f<span class="op">.</span> f (<span class="dt">G</span> a) <span class="ot">-&gt;</span> f (<span class="dt">G</span> b)</a>
+<a class="sourceLine" id="cb82-3" title="3"><span class="co">-- using the theorem above</span></a>
+<a class="sourceLine" id="cb82-4" title="4"><span class="op">~</span> <span class="ot">∀</span> a b<span class="op">.</span> <span class="dt">G</span> a <span class="ot">=</span> <span class="dt">G</span> b</a></code></pre></div>
+<p>This is really tricky and we’ll have to take a pause and talk about…</p>
+<h3 id="bounding-the-number-of-inhabitants-above">Bounding the number of inhabitants above?</h3>
+<p>Consider any polymorphic type <code>∀ a. f a</code>, can we say anything about the number of its inhabitants by instantiating <code>a</code> with different types?</p>
+<p>Can the number of instances increase because of instantiation? Most certainly!</p>
+<div class="sourceCode" id="cb83"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb83-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> a <span class="ot">-&gt;</span> a <span class="op">~</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb83-2" title="2"><span class="co">-- but</span></a>
+<a class="sourceLine" id="cb83-3" title="3"><span class="dv">2</span> <span class="ot">-&gt;</span> <span class="dv">2</span> <span class="op">~</span> <span class="dv">4</span></a></code></pre></div>
+<p>Can the number of instances decrease because of instantiation? Yes:</p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb84-1" title="1"><span class="ot">∀</span> a<span class="op">.</span> (a, a) <span class="ot">-&gt;</span> a <span class="op">~</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb84-2" title="2"><span class="co">-- but</span></a>
+<a class="sourceLine" id="cb84-3" title="3">(<span class="dv">0</span>, <span class="dv">0</span>) <span class="ot">-&gt;</span> <span class="dv">0</span> <span class="op">~</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb84-4" title="4"><span class="co">-- and</span></a>
+<a class="sourceLine" id="cb84-5" title="5">(<span class="dv">1</span>, <span class="dv">1</span>) <span class="ot">-&gt;</span> <span class="dv">1</span> <span class="op">~</span> <span class="dv">1</span></a></code></pre></div>
+<p>Well, I will figure it out later.</p>
+<h1 id="counting-inhabitants-of-types-given-laws.">Counting inhabitants of types given laws.</h1>
+<p>Is hard!</p>
+<h1 id="acknowledgements">Acknowledgements</h1>
+<ul>
+<li><a href="http://web.archive.org/web/20211021212648/http://mniip.com/">mniip</a> for his comments and the proof <code>μ x. f x &gt; 0 ⟹ f 0 &gt; 0</code>.</li>
+<li>Melissa for pointing out my ordinal / cardinal confusion.</li>
+<li><a href="http://web.archive.org/web/20211021212648/https://twitter.com/emi1ypi">emilypi</a> for her comments.</li>
+</ul>
+  </section>
+  <hr><br>
+</article>
+
+          </div> <!-- Content -->
+        </big>
+      </div> <!-- container -->
+    </main>
+
+    <script src="./@alexknvl - Counting type inhabitants._files/jquery-3.2.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="./@alexknvl - Counting type inhabitants._files/bootstrap.min.js"></script>
+  
+
+
+</body></html>
